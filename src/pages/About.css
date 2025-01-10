@@ -1,0 +1,584 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 3vh;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 100;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #fa5555;
+}
+
+
+
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100vh;
+  padding: 1em;
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+/* Background Image Layers */
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fade 10s infinite;
+  opacity: 0;
+  z-index: 0;
+  
+  
+}
+
+
+.hero-background-1 {
+  background-image: url("/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/7.jpeg"); /* Replace with your first image path */
+  animation-delay: 0s; /* Start with this image */
+}
+
+.hero-background-2 {
+  background-image: url("/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/8.png"); /* Replace with your second image path */
+  animation-delay: 5s; /* Delays to alternate with the first image */
+}
+
+/* Fading Animation */
+@keyframes fade {
+  70%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.hero-header {
+  text-align: left;
+  margin: auto 0;
+  z-index: 1;
+  
+  
+}
+
+.hero-title-about {
+  max-width: 1.5em;
+  margin: 0;
+  font-size: 9vh;
+  font-weight: bold;
+  line-height: 0.9;
+}
+
+.hero-subtitle {
+  font-size: 2vh;
+  font-weight: 400;
+  margin: 0.5em 0;
+  color: #333;
+}
+
+@media only screen and (min-width: 32em) {
+  .hero-title {
+    font-size: 10vh;
+  }
+}
+
+
+
+/* Article Section */
+article {
+  max-width: 36em;
+  margin: 2em auto;
+  padding: 1em;
+  font-size: 0.5em;
+  line-height: 1.8;
+  padding-top: 5em;
+  height: 30vh;
+  
+  
+}
+
+article h2 {
+  font-size: 3em;
+  margin-bottom: 0em;
+}
+
+.article-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: center;
+  color: transparent;
+  white-space: nowrap;
+  font-size: 3em;
+  line-height: 1.5em;
+  margin: 20px 0;
+}
+
+.article-title:before {
+  content: 'Hello .';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 0;
+  color: #333;
+}
+
+.article-title:hover {
+  animation: show 0.8s linear forwards;
+}
+
+@keyframes show {
+  93% {
+    color: transparent;
+  }
+  94% {
+    color: #333;
+  }
+  100% {
+    color: #333;
+  }
+}
+
+.article-title:hover:before {
+  animation: texte 0.8s linear forwards;
+  color:#f46d79;
+}
+
+@keyframes texte {
+  0% {
+    content: 'Architect';
+  }
+  10% {
+    content: 'Design';
+  }
+  20% {
+    content: 'Urbendesign';
+  }
+  30% {
+    content: 'Artwork';
+  }
+  50% {
+    content: 'Concept';
+  }
+  60% {
+    content: 'Chicago';
+  }
+  70% {
+    content: 'United States';
+  }
+  80% {
+    content: 'Potefolio';
+  }
+  90% {
+    content: 'Illinoistech';
+  }
+  100% {
+    content: '';
+  }
+}
+
+
+article p {
+  margin-bottom: 1.8em;
+  font-size: 13px;
+}
+
+/* timeline */
+.timeline {
+  margin: 4em auto;
+  position: relative;
+  max-width: 20em;
+  
+  
+}
+
+.timeline:before {
+  background-color: black;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 7em;
+  width: 2px;
+  height: 100%;
+  margin-left: -4em;
+}
+
+.timeline-event {
+  position: relative;
+}
+.timeline h2 {
+  font-size: 1.5rem;
+  margin: -2em 4em 0.6em 5.3em;
+  padding-top: 1em;
+  color: #333;
+}
+
+.timeline-event:hover .timeline-event-icon {
+  transform: rotate(-45deg);
+  background-color: #f46d79;
+}
+
+.timeline-event:hover .timeline-event-thumbnail {
+  box-shadow: inset 40em 0 0 0 #f46d79;
+}
+
+.timeline-event-copy {
+  padding: 1em;
+  position: relative;
+  top: -1em;
+  left: 5em;
+  width: calc(100% - 6em);
+  background-color: transparent;
+  border-radius: 5px;
+  margin-bottom: -2em;
+}
+
+.timeline-event-copy h3 {
+  font-size: 1em;
+  margin: 0 0 0.1em 0;
+  color:#333;
+}
+
+.timeline-event-copy h4 {
+  font-size: 0.8em;
+  margin-bottom: -0.2em;
+  margin-top: -0.2em;
+  color: #f46d79;
+}
+.timeline-event-copy p{
+  font-size: 13px;
+}
+
+.timeline-event-copy strong {
+  font-weight: 700;
+}
+
+.timeline-event-copy p:not(.timeline-event-thumbnail) {
+  padding-bottom: 0.5em;
+}
+
+.timeline-event-icon {
+  transition: transform 0.2s ease-in;
+  transform: rotate(45deg);
+  background-color: #333;
+  outline: 5px solid white;
+  display: block;
+  margin: 0.5em 0 0 0;
+  position: absolute;
+  top: 1;
+  left: 2.5em;
+  width: 1em;
+  height: 0.5em;
+}
+
+.timeline-event-thumbnail {
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: white;
+  font-size: 0.85em;
+  background-color: #333;
+  display: inline-block;
+  margin-bottom: 1em;
+  padding: 0.2em 1em;
+}
+
+.titleex {
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 0em;
+  color: #333;
+  margin-top: 8em;
+  margin-left: 16em;
+}
+
+
+
+.experience-section {
+  display: flex;
+  gap: 0rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  
+
+}
+
+.experience-title {
+  flex: 0 0 10%;
+  padding-left: 4em;
+  
+}
+
+.experience-title h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 4em;
+  
+}
+.experience-title p {
+  font-size: 1rem;
+  color: #333;
+  
+}
+
+.timeline {
+  flex: 0 0 50%;
+  position: relative;
+}
+
+
+.education-skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  margin: 2rem auto; /* Reduced top and bottom margins */
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.education-section,
+.skills-section {
+  flex: 1 1 45%; /* Adjust to balance width between sections */
+  min-width: 300px;
+}
+
+.education-section h2,
+.skills-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Reduced margin under heading */
+  color: #333;
+  
+}
+
+.education-list {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+.education-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem; /* Reduced gap between list items */
+}
+
+.education-year {
+  flex: 0 0 30%;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #f46d79;
+  text-align: left !important;
+}
+
+.education-details {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  margin-bottom: 0.5rem; /* Reduced gap between list items */
+  font-size: 1rem;
+  color: #f46d79;
+}
+
+.skills-list li strong {
+  font-weight: bold;
+  color:#333;
+}
+
+.skills-image-container {
+  text-align: center;
+  margin-top: 1rem; /* Adjust as needed for spacing */
+}
+
+.skills-image {
+  width: 100%; /* Full width of the container */
+  max-width: 600px; /* Adjust the maximum size */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 1rem; /* Add spacing from the Skills section */
+  filter: grayscale(100%);
+}
+
+/* Responsive Styles */
+
+
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+    text-align: center;
+    height: 90vh; /* Allow content to flow */
+  }
+  .hero-header{
+    padding-right: 150px;
+  }
+  .hero-title-about {
+    font-size: 4vh;
+    margin-bottom: 1rem;
+  }
+
+  .education-skills-section {
+    display: block; /* Stack sections vertically */
+    margin: 0rem;
+    padding: 1rem;
+    margin-top: 5em;
+  }
+
+  .education-section, .skills-section {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .education-section h2, .skills-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .education-list, .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .education-list li, .skills-list li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills-image-container {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .skills-image {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .timeline {
+    display: block; /* Stack timeline */
+    margin: 2rem 0;
+    padding: 1rem;
+    margin-top: 30em;
+  }
+  .timeline h2{
+    margin-left: 3.5em;
+    font-size: 1.8rem;
+  }
+
+  .timeline-event {
+    margin-bottom: 2rem;
+  }
+
+  .timeline-event-copy {
+    text-align: left;
+    margin-left: -2em;
+  }
+  .timeline-event-icon{
+    margin-left: -0.5em;
+  }
+
+  .experience-section {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  .experience-title {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .experience-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .skills-list li strong {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .education-year {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .hero-title-about {
+    font-size: 3.5vh;
+  }
+
+  .education-section h2, .skills-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .education-list li, .skills-list li {
+    font-size: 0.9rem;
+  }
+
+  .skills-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .timeline-event-copy h3, .timeline-event-copy h4, .timeline-event-copy p {
+    font-size: 0.8rem;
+  }
+
+  .education-year {
+    font-size: 0.9rem;
+  }
+}
+
+
+.scroll{
+    z-index: 20;
+}

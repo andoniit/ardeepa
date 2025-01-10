@@ -1,0 +1,227 @@
+
+.contact-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+    position: relative;
+    background-color: #ffffff;
+  }
+  
+  .contact-hero-left {
+    flex: 1;
+    position: relative;
+    z-index: 2; /* Ensure the text is above the image */
+    padding-right: 2rem;
+    transform: translateY(-10%); /* Adjust overlap */
+  }
+  
+  .contact-number {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .contact-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #f46d79;
+    margin: 0.5rem 0;
+    text-align: right;
+  }
+  
+  .contact-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    margin: 1rem 0;
+  }
+  
+  .contact-cta {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: right;
+    padding-right: 120px;
+  }
+  
+  .contact-hero-right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-featured {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ensure the image takes full height of the container */
+    overflow: hidden;
+  }
+  
+  .contact-featured-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Display the entire image without cropping */
+    opacity: 90%;
+  }
+  
+  .contact-details {
+    font-size: 0.9rem;
+    color: #555;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+  }
+  
+  .contact-details p {
+    margin: 0.5rem 0;
+  }
+
+  .contact-featured {
+    margin-top: -1rem; /* Adjust the overlap */
+    margin-left: -15rem; /* Adjust the horizontal position */
+    
+  }
+
+  .email-link {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .email-link:hover {
+    color: #f46d79; /* Add hover effect if desired */
+  }
+
+  @media (min-width: 1024px) {
+    .contact-hero {
+      flex-direction: row; /* Ensure side-by-side layout */
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      padding: 3rem; /* Increase padding for larger screens */
+      margin-right: 9rem;
+    }
+  
+    .contact-hero-left {
+      flex: 1;
+      padding-right: 3rem; /* Adjust padding for spacing */
+      transform: translateY(0); /* Remove vertical shift for desktop */
+      text-align: right; /* Align text to the right */
+    }
+  
+    .contact-title {
+      font-size: 5rem; /* Larger font size for desktop */
+    }
+  
+    .contact-description {
+      font-size: 1.2rem; /* Slightly larger text */
+      line-height: 1.8; /* Better spacing for larger screens */
+    }
+  
+    .contact-cta {
+      font-size: 1.5rem; /* Make the CTA more prominent */
+      padding-right: 5em; /* Remove additional padding */
+    }
+  
+    .contact-hero-right {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start; /* Align image to the left */
+      margin-left: -15rem; /* Overlap adjustment for desktop */
+    }
+  
+    .contact-featured {
+      width: 80%; /* Ensure proper scaling for image */
+      height: auto; /* Maintain aspect ratio */
+      margin-left: 0; /* Center the image */
+      margin-top: 0; /* Reset margin */
+    }
+  
+    .contact-featured-image {
+      width: 100%;
+      height: auto; /* Ensure the image scales correctly */
+      opacity: 1; /* Fully visible image */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-hero {
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: flex-start; /* Align elements to the top */
+      align-items: center; /* Center align for smaller screens */
+      height: auto; /* Allow the height to adjust dynamically */
+      padding: 1.5rem; /* Adjust padding for small screens */
+    }
+  
+    .contact-hero-left {
+      flex: none; /* Remove flex constraints */
+      text-align: center; /* Center-align text */
+      padding: 0; /* Remove padding */
+      transform: translateY(0); /* Remove overlap */
+      margin-bottom: 1.5rem; /* Add spacing below the left section */
+      margin-top: 3em;
+    }
+  
+    .contact-title {
+      font-size: 4rem; /* Reduce font size for better fit */
+      text-align: center; /* Center-align the title */
+      margin: 0.5rem 0; /* Add margin for spacing */
+    }
+    .contact-number{
+      text-align: center;
+    }
+    .contact-description {
+      font-size: 1rem; /* Reduce text size */
+      line-height: 1.5; /* Adjust line spacing */
+      text-align: center; /* Center-align the description */
+      margin: 1rem 0; /* Add spacing */
+    }
+  
+    .contact-cta {
+      font-size: 1rem; /* Adjust CTA size */
+      text-align: center; /* Center-align the CTA */
+      padding: 0; /* Remove extra padding */
+      margin-top: 1rem; /* Add spacing above CTA */
+    }
+  
+    .contact-hero-right {
+      flex: none; /* Remove flex constraints */
+      width: 100%; /* Ensure full width */
+      text-align: center; /* Center-align the image */
+      margin: 0; /* Reset margins */
+    }
+  
+    .contact-featured {
+      width: 100%; /* Full width for the container */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0; /* Reset margins */
+    }
+  
+    .contact-featured-image {
+      width: 100%; /* Ensure image scales with container */
+      height: auto; /* Maintain aspect ratio */
+      opacity: 1; /* Fully visible image */
+    }
+  
+    .contact-details {
+      font-size: 0.8rem; /* Adjust font size for small screens */
+      text-align: center; /* Center-align the details */
+      position: static; /* Remove absolute positioning */
+      margin-top: 1rem; /* Add spacing */
+    }
+  
+    .email-link {
+      font-size: 1rem; /* Adjust email link size */
+      text-align: center; /* Center-align the email link */
+      margin-top: 1rem; /* Add spacing */
+    }
+  }

@@ -1,0 +1,363 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 3vh;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    
+  }
+/* Project Hero Section */
+.project-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #ffffff; /* Background color */
+    color: #000000; /* Text color */
+    font-family: Arial, sans-serif;
+    position: cover;
+    background-image: url("/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/14.png");
+    background-position:inherit;
+    background-size: 30em;
+    background-repeat: no-repeat;
+  }
+  
+  .project-hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    padding-top: 10em;
+  }
+  
+  .project-hero-year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  
+  .project-hero-year p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .project-hero-year .line {
+    width: 2px;
+    height: 3rem;
+    background-color: #000000;
+    margin: 0.5rem 0;
+  }
+  
+  .project-hero-title {
+    text-align: right;
+  }
+  
+  .project-hero-title h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .project-hero-title p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+    color: #555555;
+  }  
+
+
+
+/* Table of Contents Section */
+.table-of-contents-section {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: -3em;
+    z-index: 1;
+}
+
+.table-of-contents-section h2 {
+    font-size: 6rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    color: #333;
+   text-align: left;
+}
+.table-of-contents-section h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    color: #f46d79;
+   text-align: left;
+   margin-bottom: -100px;
+   margin-top: 100px;
+}
+
+.table-of-contents-section p {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #000000;
+   text-align: left;
+   
+}
+
+.contents-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+}
+
+.content-image img {
+    width: 30em;
+    height: auto;
+    object-fit: cover;
+    
+}
+.content-item:hover .content-image img  {
+    filter: grayscale(100%);
+    transform:scale(0.99); 
+}
+
+.content-image img{
+    width: 30em;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.content-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content-details span {
+    font-size: 9rem;
+    font-weight: bold;
+    color: #ffacb3;
+    margin-left: -1em;
+    z-index: 1;
+}
+
+.content-details p {
+    font-size: 1.2rem;
+    color: #939393;
+    text-transform: capitalize;
+    margin-top: -2em;
+    margin-left: 1.4em;
+    
+}
+.content-details h3 {
+    font-size: 3rem;
+    color: #333;
+    text-transform: capitalize;
+    margin-top: -3em;
+    text-align: left;
+    font-weight: 200;
+    margin-left: 0.4em;
+    
+}
+
+.contents-list a{
+    text-decoration: none;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  /* Project Hero Section */
+  .project-hero {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow dynamic height */
+    padding: 2rem;
+    background-position: right; /* Center the background image */
+    background-size: cover; /* Ensure the image covers the section */
+  }
+
+  .project-hero-content {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem; /* Adjust padding */
+
+  }
+
+  .project-hero-year {
+    margin-right: 0em;
+    margin-bottom: 1rem; /* Add space below */
+  }
+
+  .project-hero-year p {
+    font-size: 0.8rem; /* Reduce font size */
+    
+  }
+
+  .project-hero-year .line {
+    height: 2rem; /* Adjust line height */
+  }
+
+  .project-hero-title {
+    text-align: center; /* Center-align for smaller screens */
+  }
+
+  .project-hero-title h1 {
+    font-size: 2rem; /* Reduce title size */
+  }
+
+  .project-hero-title p {
+    font-size: 1rem; /* Adjust subtitle size */
+  }
+
+  /* Table of Contents Section */
+  .table-of-contents-section {
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: left; /* Align text to left */
+  }
+
+  .table-of-contents-section h2 {
+    font-size: 4rem; /* Reduce heading size */
+    margin-bottom: 1rem;
+  }
+
+  .table-of-contents-section h1 {
+    font-size: 1.5rem; /* Reduce subheading size */
+    margin-top: 50px;
+    margin-bottom: -50px;
+  }
+
+  .table-of-contents-section p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+
+  .contents-list {
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem; /* Reduce gap */
+  }
+
+  .content-item {
+    flex-direction: column; /* Stack image and details vertically */
+    align-items: center; /* Center align for consistency */
+    gap: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+
+  .content-image img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .content-details {
+    align-items: left; /* Center align details */
+  }
+
+  .content-details span {
+    font-size: 6rem; /* Reduce the font size */
+    margin-left: 0; /* Center the text */
+  }
+
+  .content-details h3 {
+    font-size: 2rem; /* Adjust heading size */
+    margin: 0.5rem 0; /* Add spacing */
+  }
+
+  .content-details p {
+    font-size: 1rem; /* Adjust font size */
+    margin: 0.5rem 0; /* Add spacing */
+    text-align: center; /* Center align the text */
+  }
+  
+  
+  .gallery-column {
+    min-width: 100px !important;
+  }
+  
+  
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  /* Further reduce sizes for smaller devices */
+  .project-hero-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-hero-title p {
+    font-size: 0.8rem;
+  }
+
+  .table-of-contents-section h2 {
+    font-size: 3rem;
+  }
+
+  .table-of-contents-section h1 {
+    font-size: 1.2rem;
+  }
+
+  .content-details span {
+    font-size: 4rem;
+  }
+
+  .content-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .content-details p {
+    font-size: 0.8rem;
+  }
+}
+
+
+.gallery {
+  height: 175vh;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  
+}
+
+.gallery-wrapper {
+  position: relative;
+  top: -2vh;
+  height: 200vh;
+  display: flex;
+  gap: 2vw;
+  padding: 2vw;
+}
+
+.gallery-column {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  white-space: nowrap;
+  will-change: transform;
+  transform: translate3d(0, 0, 0)
+}
+
+.gallery-image {
+  position: relative;
+  height: 33%;
+  width: 100%;
+  
+  overflow: hidden;
+}
+
+.gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
