@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./Home.css";
-import heroImage from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/6.png"; // Update the path to your hero image
+import heroImage from "../assets/18.mp4"; 
 import gsap from "gsap";
-import Navbar from '/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/components/Navbar.js';
+import Navbar from '../components/Navbar.js';
 
 
 

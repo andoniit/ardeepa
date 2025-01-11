@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import Navbar from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/components/Navbar.js";
+import Navbar from "../components/Navbar.js";
 import "./About.css";
-import skillsImage from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/9.jpg";
+import skillsImage from "../assets/9.jpg";
 import { motion, useSpring, useScroll, useTransform } from "framer-motion";
 
 const About = () => {

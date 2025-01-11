@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/components/Navbar.js";
+import Navbar from "../components/Navbar.js";
 import "./contact.css";
 
 // Import the image
-import featuredImage from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/12.jpg"; 
+import featuredImage from "../assets/12.jpg"; 
 
 const Contact = () => {
     return (

@@ -1,22 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
-import Navbar from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/components/Navbar.js";
+import Navbar from "../components/Navbar.js";
 import "./Projects.css";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 
 // Project Images
-import project1 from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/11.png";
-import project2 from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/10.png";
+import project1 from "../assets/11.png";
+import project2 from "../assets/10.png";
 
 //sliderimage
-import slider1 from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/15.webp";
-import slider2 from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/16.webp";
-import slider3 from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/16.webp";
-import slider4 from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/11.png";
-import slider5 from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/13.png";
-import slider6 from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/8.png";
-import slider7 from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/10.png";
-import slider8 from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/11.png";
+import slider1 from "../assets/15.webp";
+import slider2 from "../assets/16.webp";
+import slider3 from "../assets/16.webp";
+import slider4 from "../assets/11.png";
+import slider5 from "../assets/13.png";
+import slider6 from "../assets/8.png";
+import slider7 from "../assets/10.png";
+import slider8 from "../assets/11.png";
 
 
 
