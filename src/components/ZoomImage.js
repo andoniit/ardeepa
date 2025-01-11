@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/components/projects/Promain.css";
+import "../components/projects/Promain.css";
 
 const ZoomImage = ({ src, alt }) => {
   const [isZoomed, setIsZoomed] = useState(false);
