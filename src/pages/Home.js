@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import "./Home.css";
-import heroImage from "../assets/18.mp4"; 
+import heroVideo from "../assets/18.mp4"; 
+import fallbackImage from "../assets/1.png"; 
 import gsap from "gsap";
-import Navbar from '../components/Navbar.js';
-
-import heroImage2 from "../assets/1.png"; 
-
+import Navbar from "../components/Navbar.js";
 
 const Home = () => {
   useEffect(() => {
@@ -78,9 +76,12 @@ const Home = () => {
         Chicago, IL
       </div>
 
-      {/* Hero Image */}
+      {/* Hero Media */}
       <div className="hero-image">
-        <img src={heroImage} alt={heroImage2} />
+        <picture>
+          <source srcSet={heroVideo} type="video/mp4" />
+          <img src={fallbackImage} alt="Hero Fallback" />
+        </picture>
       </div>
     </div>
   );
