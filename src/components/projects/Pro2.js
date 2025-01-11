@@ -5,13 +5,13 @@ import { motion, useSpring, useScroll } from "motion/react"
 
 import ZoomImage from "../ZoomImage";
 
-const projectImage = "/assets/pro-2/1_2-2.webp";
-const projectImage1 = "/assets/pro-2/1_3-2.webp";
-const projectImage2 = "/assets/pro-2/1_4-3.webp";
-const projectImage3 = "/assets/pro-2/1_5-2.webp";
-const projectImage4 = "/assets/pro-2/1_6-2.webp";
-const projectImage5 = "/assets/pro-2/1_7-2.webp";
-const projectImage6 = "/assets/pro-2/1_8.webp";
+import projectImage from "../pro-2/1_2-2.webp";
+import projectImage1 from "../pro-2/1_3-2.webp";
+import projectImage2 from "../pro-2/1_4-3.webp";
+import projectImage3 from "../pro-2/1_5-2.webp";
+import projectImage4 from "../pro-2/1_6-2.webp";
+import projectImage5 from "../pro-2/1_7-2.webp";
+import projectImage6 from "../pro-2/1_8.webp";
 
 
 
