@@ -66,12 +66,12 @@ body {
 
 
 .hero-background-1 {
-  background-image: url("/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/7.jpeg"); /* Replace with your first image path */
+  background-image: url("../assets/7.jpeg"); /* Replace with your first image path */
   animation-delay: 0s; /* Start with this image */
 }
 
 .hero-background-2 {
-  background-image: url("/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/8.png"); /* Replace with your second image path */
+  background-image: url("../assets/8.png"); /* Replace with your second image path */
   animation-delay: 5s; /* Delays to alternate with the first image */
 }
 
