@@ -17,7 +17,7 @@ body {
     color: #000000; /* Text color */
     font-family: Arial, sans-serif;
     position: cover;
-    background-image: url("/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/14.png");
+    background-image: url("../assets/14.png");
     background-position:inherit;
     background-size: 30em;
     background-repeat: no-repeat;

@@ -1,11 +1,9 @@
 import React from "react";
 import "./Promain.css";
 import Navbar from "../Navbar";
-import backgroundImage from "/Users/aniruddhkapileshwari/Desktop/Deepa-pot/deepa-portfolio/src/assets/6.png";
 
 const Project1 = () => {
   const backgroundStyle = {
-    backgroundImage: `url('${backgroundImage}')`, // Replace with your local or hosted image path
     backgroundSize: "cover",
     backgroundPosition: "top",
     backgroundRepeat: "no-repeat",
