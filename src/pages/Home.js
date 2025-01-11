@@ -4,6 +4,7 @@ import heroImage from "../assets/18.mp4";
 import gsap from "gsap";
 import Navbar from '../components/Navbar.js';
 
+import heroImage2 from "../assets/1.png"; 
 
 
 const Home = () => {
@@ -79,7 +80,7 @@ const Home = () => {
 
       {/* Hero Image */}
       <div className="hero-image">
-        <img src={heroImage} alt="Hero" />
+        <img src={heroImage} alt={heroImage2} />
       </div>
     </div>
   );
