@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.js";
 import "./Projects.css";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
+import TextEffect from "../components/TextEffect.js";
 
 // Project Images
 import project1 from "../assets/11.png";
@@ -25,33 +26,47 @@ import slider8 from "../assets/11.png";
 const Projects = () => {
     const projectData = [
         { id: "01", title: "Formula One Grand Prix Race Circuit", subtitle: "Masters 1st term project", img: project1, link: "/pro1" },
-        { id: "02", title: "Urban Campus Housing", subtitle: "Masters 1st term project", img: project2 },
+        { id: "02", title: "Urban Campus Housing", subtitle: "Masters 1st term project", img: project2, link:"/pro2" },
     ];
 
-    // Scroll Progress
-    const { scrollYProgress } = useScroll();
-
-    // Parallax Gallery Effect
     const gallery = useRef(null);
-    const [dimension, setDimension] = useState({ width: 0, height: 0 });
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
-    const { height } = dimension;
-    const y1 = useTransform(scrollYProgress, [1, 0], [height, 0]);
-    const y2 = useTransform(scrollYProgress, [0, 1], [-150, height * 1.8]); // Adjusted to avoid jitter
-    const y3 = useTransform(scrollYProgress, [1, 0], [height * 0.8, 0]); // Consistent scaling
-    const y4 = useTransform(scrollYProgress, [0, 1], [-150, height * 1.5]); // Adjusted for smoother scroll
-    
-    useEffect(() => {
-        const resize = () => {
-            setDimension({ width: window.innerWidth, height: window.innerHeight });
-        };
+  const { scrollYProgress } = useScroll({
+    target: gallery,
+    offset: ["start end", "end start"],
+  });
 
-        window.addEventListener("resize", resize);
-        resize();
+  const { height } = dimensions;
 
-        return () => {
-            window.removeEventListener("resize", resize);
-        };
+  // Adjust transforms for smoother parallax effect
+  const y1 = useTransform(scrollYProgress, [0, 1], [0, height * -0.5]); // Moves up
+  const y2 = useTransform(scrollYProgress, [0, 1], [-1000, height * 0.5]);    // Moves down
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * -0.5]); // Moves up
+  const y4 = useTransform(scrollYProgress, [0, 1], [-1000, height * 0.5]);    // Moves down
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+
+    const handleResize = () => {
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    requestAnimationFrame(raf);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
         
     }, []);
 
@@ -62,71 +77,7 @@ const Projects = () => {
 
             <Navbar />
             
-            {/* Gallery Section */}
-            <div ref={gallery} className="gallery">
-                <div className="gallery-wrapper">
-                    <motion.div
-                        className="gallery-column"
-                        style={{ y: y1 }}
-                        transition={{
-                            duration: 1,
-                            ease: [0.22, 1, 0.36, 1], // Smooth animation for parallax
-                        }}
-                    >
-                        <div className="gallery-image">
-                            <img src={slider1} alt="Project 1" />
-                        </div>
-                        <div className="gallery-image">
-                            <img src={slider2} alt="Project 2" />
-                        </div>
-                    </motion.div>
-                    <motion.div
-                        className="gallery-column"
-                        style={{ y: y2 }}
-                        transition={{
-                            duration: 1,
-                            ease: [0.22, 1, 0.36, 1], // Smooth animation for parallax
-                        }}
-                    >
-                        <div className="gallery-image">
-                            <img src={slider3} alt="Project 3" />
-                        </div>
-                        <div className="gallery-image">
-                            <img src={slider4} alt="Project 3" />
-                        </div>
-                    </motion.div>
-                    <motion.div
-                        className="gallery-column"
-                        style={{ y: y3 }}
-                        transition={{
-                            duration: 1,
-                            ease: [0.22, 1, 0.36, 1], // Smooth animation for parallax
-                        }}
-                    >
-                        <div className="gallery-image">
-                            <img src={slider5} alt="Project 3" />
-                        </div>
-                        <div className="gallery-image">
-                            <img src={slider6} alt="Project 3" />
-                        </div>
-                    </motion.div>
-                    <motion.div
-                        className="gallery-column"
-                        style={{ y: y4 }}
-                        transition={{
-                            duration: 1,
-                            ease: [0.22, 1, 0.36, 1], // Smooth animation for parallax
-                        }}
-                    >
-                        <div className="gallery-image">
-                            <img src={slider7} alt="Project 3" />
-                        </div>
-                        <div className="gallery-image">
-                            <img src={slider8} alt="Project 3" />
-                        </div>
-                    </motion.div>
-                </div>
-            </div>
+            
 
             {/* Existing Hero Section */}
             <div className="project-hero">
@@ -140,8 +91,67 @@ const Projects = () => {
                         <h1>PROJECTS</h1>
                         <p>of Deepa Devangmath</p>
                     </div>
+                    
+                </div>
+                
+            </div>
+
+
+{/* Gallery Section */}
+<div ref={gallery} className="gallery">
+                <div className="gallery-wrapper">
+                    <motion.div
+                        className="gallery-column"
+                        style={{ y: y1 }}
+                        
+                    >
+                        <div className="gallery-image">
+                            <img src={slider1} alt="Project 1" />
+                        </div>
+                        <div className="gallery-image">
+                            <img src={slider2} alt="Project 2" />
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        className="gallery-column"
+                        style={{ y: y2 }}
+                        
+                    >
+                        <div className="gallery-image">
+                            <img src={slider3} alt="Project 3" />
+                        </div>
+                        <div className="gallery-image">
+                            <img src={slider4} alt="Project 3" />
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        className="gallery-column"
+                        style={{ y: y3 }}
+                        
+                    >
+                        <div className="gallery-image">
+                            <img src={slider5} alt="Project 3" />
+                        </div>
+                        <div className="gallery-image">
+                            <img src={slider6} alt="Project 3" />
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        className="gallery-column"
+                        style={{ y: y4 }}
+                        
+                    >
+                        <div className="gallery-image">
+                            <img src={slider7} alt="Project 3" />
+                        </div>
+                        <div className="gallery-image">
+                            <img src={slider8} alt="Project 3" />
+                        </div>
+                    </motion.div>
                 </div>
             </div>
+
+
 
             {/* Existing Projects Section */}
             <div className="table-of-contents-section">

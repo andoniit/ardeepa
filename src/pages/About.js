@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Navbar from "../components/Navbar.js";
 import "./About.css";
-import skillsImage from "../assets/9.jpg";
+import skillsImage from "../assets/19.HEIC";
 import { motion, useSpring, useScroll, useTransform } from "framer-motion";
 
 const About = () => {

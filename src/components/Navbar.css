@@ -17,7 +17,7 @@
 .navbar-scrolled {
   background-color: #ffffff; /* Background color after scrolling */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
-  margin-top: 10px;
+ 
 }
 
 .navbar-copyright {
@@ -58,6 +58,9 @@
 
 .navbar-copyright:hover {
   color: #fa5555;
+}
+.scroll{
+  background-color: #000;
 }
 
 @media (max-width: 768px) {

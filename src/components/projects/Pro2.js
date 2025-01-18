@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Promain.css";
 import Navbar from "../Navbar";
 import { motion, useSpring, useScroll } from "motion/react"
-
+import ProgressCircle from "../ProgressCircle";
 import ZoomImage from "../ZoomImage";
 
 import projectImage from "../pro-2/1_2-2.webp";
@@ -130,7 +130,7 @@ const Project1 = () => {
        
       </div>
 
-      
+      <ProgressCircle />
     </div>
   );
 };

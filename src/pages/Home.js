@@ -62,6 +62,7 @@ const Home = () => {
 
       {/* Main Content */}
       <div className="main-content">
+        
         <div className="hero-content">
           <h1 className="hero-architecture">ARCHITECTURE</h1>
           <h1 className="hero-title">

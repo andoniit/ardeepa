@@ -25,6 +25,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
 
   return (
     <>
@@ -37,7 +38,7 @@ const Navbar = () => {
         top: 0,
         left: 0,
         right: 0,
-        height: 10,
+        height: 5,
         originX: 0,
         backgroundColor: "#f46d79",
         zIndex: 1000,
