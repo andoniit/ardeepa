@@ -20,7 +20,7 @@ import Pro8 from './components/projects/Pro8';
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 
-
+import ClickSpark from './components/ClickSpark';
 const App = () => {
     const location = useLocation();
   
@@ -28,6 +28,7 @@ const App = () => {
     return (
         
       <ParallaxProvider>
+        <ClickSpark />
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />

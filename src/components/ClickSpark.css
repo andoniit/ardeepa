@@ -1,0 +1,18 @@
+/* Styles for the click spark animation */
+.click-spark {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%); /* Center the spark exactly at the cursor tip */
+    animation: fade-out 0.7s forwards;
+    color: #FF007F;
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

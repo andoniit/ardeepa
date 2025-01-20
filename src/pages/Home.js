@@ -5,6 +5,7 @@ import fallbackImage from "../assets/18.gif";
 import gsap from "gsap";
 import Navbar from "../components/Navbar.js";
 
+
 const Home = () => {
   useEffect(() => {
     // Animate location tag
@@ -59,7 +60,7 @@ const Home = () => {
     <div className="home">
       {/* Global Navbar */}
       <Navbar />
-
+      
       {/* Main Content */}
       <div className="main-content">
         
