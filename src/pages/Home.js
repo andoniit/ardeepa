@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Home.css";
 import heroVideo from "../assets/18.gif"; 
-import fallbackImage from "../assets/1.png"; 
+import fallbackImage from "../assets/18.gif"; 
 import gsap from "gsap";
 import Navbar from "../components/Navbar.js";
 
@@ -80,7 +80,7 @@ const Home = () => {
       {/* Hero Media */}
       <div className="hero-image">
         <picture>
-          <source srcSet={heroVideo} type="video/mp4" />
+          <source srcSet={heroVideo} type="gif" />
           <img src={fallbackImage} alt="Hero Fallback" />
         </picture>
       </div>
