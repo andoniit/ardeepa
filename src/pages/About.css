@@ -174,7 +174,7 @@ article h2 {
 
 .article-title:hover:before {
   animation: texte 0.8s linear forwards;
-  color:#f46d79;
+  color:#FF007F;
 }
 
 @keyframes texte {
@@ -248,11 +248,11 @@ article p {
 
 .timeline-event:hover .timeline-event-icon {
   transform: rotate(-45deg);
-  background-color: #f46d79;
+  background-color: #FF007F;
 }
 
 .timeline-event:hover .timeline-event-thumbnail {
-  box-shadow: inset 40em 0 0 0 #f46d79;
+  box-shadow: inset 40em 0 0 0 #FF007F;
 }
 
 .timeline-event-copy {
@@ -276,7 +276,7 @@ article p {
   font-size: 0.8em;
   margin-bottom: -0.2em;
   margin-top: -0.2em;
-  color: #f46d79;
+  color: #FF007F;
 }
 .timeline-event-copy p{
   font-size: 13px;
@@ -399,7 +399,7 @@ article p {
   flex: 0 0 30%;
   font-weight: bold;
   font-size: 1rem;
-  color: #f46d79;
+  color: #FF007F;
   text-align: left !important;
 }
 
@@ -418,7 +418,7 @@ article p {
 .skills-list li {
   margin-bottom: 0.5rem; /* Reduced gap between list items */
   font-size: 1rem;
-  color: #f46d79;
+  color: #FF007F;
 }
 
 .skills-list li strong {

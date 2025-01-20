@@ -65,7 +65,7 @@ body {
   .project-hero-title p {
     font-size: 1.2rem;
     margin: 0.5rem 0 0;
-    color: #f46d79;
+    color: #FF007F;
   }  
 
 
@@ -90,7 +90,7 @@ body {
 .table-of-contents-section h1 {
     font-size: 2rem;
     font-weight: 100;
-    color: #f46d79;
+    color: #FF007F;
    text-align: left;
    margin-bottom: -100px;
    margin-top: 100px;
@@ -145,7 +145,7 @@ body {
 .content-details span {
     font-size: 9rem;
     font-weight: bold;
-    color: #ffacb3;
+    color: #FF007F;
     margin-left: -1em;
     z-index: 1;
 }

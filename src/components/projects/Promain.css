@@ -107,7 +107,7 @@ body {
 
 .project1-description h3 {
   font-size: 1.5rem;
-  color: #f46d79;
+  color: #FF007F;
   margin-bottom: 1rem;
 }
 
@@ -147,7 +147,7 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: #f46d79;
+  background-color: #FF007F;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -166,7 +166,7 @@ body {
   font-weight: bold;
   color: #333; /* Neutral dark color */
   margin-bottom: 1rem;
-  border-left: 4px solid #f46d79; /* Accent border */
+  border-left: 4px solid #FF007F; /* Accent border */
   padding-left: 1rem; /* Indentation to align with the border */
 }
 
@@ -192,7 +192,7 @@ body {
 
 /* Add hover effect for interactive feeling */
 .project1-extra-section li:hover {
-  color: #f46d79; /* Highlight color on hover */
+  color: #FF007F; /* Highlight color on hover */
   cursor: pointer;
   transform: translateX(5px); /* Subtle movement */
   transition: all 0.3s ease;
@@ -301,7 +301,7 @@ body {
       left: 0;
       width: 0;
       height: 2px;
-      background: #f46d79;
+      background: #FF007F;
       transition: width 0.3s ease;
     }
   }
@@ -324,7 +324,7 @@ body {
     left: 80px;
     width: 70px;
     height: 2px;
-    background: #f46d79;
+    background: #FF007F;
     transition: left 0.3s ease;
   }
 }
@@ -405,7 +405,7 @@ body {
       right: 0;
       width: 0;
       height: 2px;
-      background: #f46d79;
+      background: #FF007F;
       transition: width 0.3s ease;
     }
   }
@@ -430,7 +430,7 @@ body {
     width: 70px;
     height: 2px;
     left: 0;
-    background: #f46d79;
+    background: #FF007F;
     transition: left 0.3s ease;
   }
 }
@@ -530,7 +530,7 @@ body {
       left: 0;
       width: 0;
       height: 2px;
-      background: #f46d79;
+      background: #FF007F;
       transition: width 0.3s ease;
     }
   }
@@ -553,7 +553,7 @@ body {
     left: 60px;
     width: 40px; /* Reduced width for mobile */
     height: 2px;
-    background: #f46d79;
+    background: #FF007F;
     transition: left 0.3s ease;
   }
 }
@@ -602,7 +602,7 @@ body {
       right: 0;
       width: 0;
       height: 2px;
-      background: #f46d79;
+      background: #FF007F;
       transition: width 0.3s ease;
     }
   }
@@ -625,7 +625,7 @@ body {
     right: 60px;
     width: 40px; /* Reduced width for mobile */
     height: 2px;
-    background: #f46d79;
+    background: #FF007F;
     transition: left 0.3s ease;
   }
 }

@@ -4,6 +4,7 @@ import "./About.css";
 import skillsImage from "../assets/19.HEIC";
 import { motion, useSpring, useScroll, useTransform } from "framer-motion";
 
+
 const About = () => {
   const containerRef = useRef();
   const { scrollYProgress } = useScroll({
@@ -37,7 +38,7 @@ const About = () => {
             </p>
           </header>
         </section>
-
+        
       {/* Main Content */}
       <article id="introduction">
         <h2 class="article-title">Deepa Devangmath</h2>

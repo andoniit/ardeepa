@@ -15,8 +15,16 @@
 }
 
 .navbar-scrolled {
-  background-color: #ffffff; /* Background color after scrolling */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+background-color: transparent;
+background-image: radial-gradient(transparent 1px, var(--token-f32baa44-90b8-42a5-8bca-ffba9d95b23a, #ffffff) 1px);
+background-size: 4px 4px;
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
+mask: linear-gradient(rgb(255, 255, 255) 60%, rgba(255, 255, 255, 0) 100%);
+mask-size: auto;
+mask-composite: add;
+mask-mode: match-source;
+opacity: 1;
  
 }
 
@@ -46,7 +54,7 @@
 }
 
 .navbar-links li a:hover {
-  color: #fa5555;
+  color: #FF007F;
 }
 
 .navbar-copyright {
@@ -57,7 +65,7 @@
 }
 
 .navbar-copyright:hover {
-  color: #fa5555;
+  color: #FF007F;
 }
 .scroll{
   background-color: #000;

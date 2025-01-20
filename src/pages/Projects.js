@@ -6,8 +6,8 @@ import Lenis from "@studio-freight/lenis";
 import TextEffect from "../components/TextEffect.js";
 
 // Project Images
-import project1 from "../assets/11.png";
-import project2 from "../assets/10.png";
+import project1 from "../assets/20.png";
+import project2 from "../assets/20.png";
 
 //sliderimage
 import slider1 from "../assets/15.webp";

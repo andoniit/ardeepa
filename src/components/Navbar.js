@@ -40,7 +40,7 @@ const Navbar = () => {
         right: 0,
         height: 5,
         originX: 0,
-        backgroundColor: "#f46d79",
+        backgroundColor: "#FF007F",
         zIndex: 1000,
       }}
     />

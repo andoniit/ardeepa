@@ -1,39 +1,143 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Promain.css";
 import Navbar from "../Navbar";
+import { motion, useSpring, useScroll } from "motion/react"
+import ProgressCircle from "../ProgressCircle";
+import ZoomImage from "../ZoomImage";
+
+import projectImage from "../pro-2/1_2-2.webp";
+import projectImage1 from "../pro-2/1_3-2.webp";
+import projectImage2 from "../pro-2/1_4-3.webp";
+import projectImage3 from "../pro-2/1_5-2.webp";
+import projectImage4 from "../pro-2/1_6-2.webp";
+import projectImage5 from "../pro-2/1_7-2.webp";
+import projectImage6 from "../pro-2/1_8.webp";
+
+
+
+
+
+
+
 
 const Project1 = () => {
-  const backgroundStyle = {
-    backgroundSize: "cover",
-    backgroundPosition: "top",
-    backgroundRepeat: "no-repeat",
-    height: "100vh",
-    width: "100%",
-    
-  };
+ 
+
+
   return (
     
-    <div  className="project1-hero">
-      <Navbar />
-      <div className="project1-hero-content">
-        <div className="project1-header">
-          <h1>03</h1>
-          <div className="project1-year">
-            <p>2024</p>
-            <span>Masters 1st Teram Project</span>
-            <span>Location:chicago, Illinois</span>
-
+    <div>
+      
+      {/* Hero Section */}
+      <div className="project1-hero">
+        <Navbar />
+        <div className="project1-hero-content">
+          <div className="project1-header">
+            <h1>03</h1>
+            <div className="project1-year">
+              <p>2023</p>
+              <span>Masters 1st Term Project</span>
+              <span>Location : Belgaum, India</span>
+              
+            </div>
+            
+          </div>
+          
+          <div className="project1-details">
+            <h2>The</h2>
+            <h2>Backyard Revival</h2>
+            <p className="cover-description">
+            The restaurant has undergone renovations, transforming its previously abandoned backyard into its most significant feature. The backyard now boasts an open courtyard with outdoor seating, surrounded by various fine dining areas, including a family seating section, a smoking area, a bar counter, and a spiral staircase. A pergola with glass elements seamlessly connects these spaces. The spiral staircase leads to the first floor, which is dedicated to family dining.
+            </p>
+            
           </div>
         </div>
-        <div className="project1-details">
-          <h2>Formula One </h2>
-          <h2>Grand Prix Race Circuit</h2>
-          <p className="cover-description">
-            Cover Description: Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, integer lectus, sed in felis dignissim convallis.
-          </p>
-        </div>
       </div>
+      
+
+      {/* New Section: Image and Description */}
+      <div className="project1-extra-section">
+        
+        <div className="project1-image">
+          <ZoomImage
+            src={projectImage}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          
+          <ZoomImage
+            src={projectImage1}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          
+
+
+
+
+          <ZoomImage
+            src={projectImage2}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          
+
+
+
+            <ZoomImage
+            src={projectImage3}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          
+
+
+            <ZoomImage
+            src={projectImage4}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          <ZoomImage
+            src={projectImage5}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          <ZoomImage
+            src={projectImage6}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          
+          <div class="button-section">
+  
+            <a class="left-link" href="/pro2">
+            <span class="left-link__arrow">
+            <span></span>
+            <span></span>
+            </span>
+            <span class="left-link__line"></span>
+            <span class="left-link__text">Previous Project</span>
+            </a>
+
+  
+            <a class="center-link" href="/projects">All Projects</a>
+
+  
+            <a class="right-link" href="/pro4">
+            <span class="right-link__text">Next Project</span>
+            <span class="right-link__line"></span>
+            <span class="right-link__arrow">
+            <span></span>
+            <span></span>
+            </span>
+            </a>
+            </div>
+          </div>
+        
+       
+      </div>
+
+      <ProgressCircle />
     </div>
   );
 };
