@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Home.css";
-import heroVideo from "../assets/18.mp4"; 
+import heroVideo from "../assets/18.gif"; 
 import fallbackImage from "../assets/1.png"; 
 import gsap from "gsap";
 import Navbar from "../components/Navbar.js";
