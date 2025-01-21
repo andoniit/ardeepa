@@ -16,13 +16,27 @@ const About = () => {
   const y1 = useTransform(scrollYProgress, [0, 1], ["0vh", "50vh"]);
   const y2 = useTransform(scrollYProgress, [0, 1], ["0vh", "-50vh"]);
 
+  const pageVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    exit: { opacity: 0, y: -100, transition: { duration: 0.5, ease: "easeIn" } },
+  };
+
   return (
     <>
-      
+    <Navbar />
+      <motion.div
+      className="page"
+      ref={containerRef}
+      variants={pageVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <div className="page" ref={containerRef}>
         {/* Hero Section */}
         <section className="hero">
-          <Navbar />
+          
           <motion.div
             className="hero-background hero-background-1"
             style={{ y: y1 }}
@@ -150,6 +164,7 @@ meaningful architectural solutions.
   </div>
 </section>
 </div>
+</motion.div>
     </>
     
   );

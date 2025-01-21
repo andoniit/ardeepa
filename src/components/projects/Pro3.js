@@ -5,13 +5,22 @@ import { motion, useSpring, useScroll } from "motion/react"
 import ProgressCircle from "../ProgressCircle";
 import ZoomImage from "../ZoomImage";
 
-import projectImage from "../pro-2/1_2-2.webp";
-import projectImage1 from "../pro-2/1_3-2.webp";
-import projectImage2 from "../pro-2/1_4-3.webp";
-import projectImage3 from "../pro-2/1_5-2.webp";
-import projectImage4 from "../pro-2/1_6-2.webp";
-import projectImage5 from "../pro-2/1_7-2.webp";
-import projectImage6 from "../pro-2/1_8.webp";
+import projectImage from "../pro-3/intro.png";
+import projectImage1 from "../pro-3/1.jpg";
+import projectImage2 from "../pro-3/2.jpg";
+import projectImage3 from "../pro-3/3.jpg";
+import projectImage4 from "../pro-3/5.HEIC";
+import projectImage5 from "../pro-3/6.png";
+import projectImage6 from "../pro-3/7.png";
+import projectImage7 from "../pro-3/8.webp";
+import projectImage8 from "../pro-3/9.webp";
+import projectImage9 from "../pro-3/10.webp";
+import projectImage10 from "../pro-3/11.webp";
+import projectImage11 from "../pro-3/12.webp";
+import projectImage12 from "../pro-3/13.webp";
+
+
+
 
 
 
@@ -35,8 +44,8 @@ const Project1 = () => {
           <div className="project1-header">
             <h1>03</h1>
             <div className="project1-year">
-              <p>2023</p>
-              <span>Masters 1st Term Project</span>
+              <p>2024</p>
+              <span>Internship project</span>
               <span>Location : Belgaum, India</span>
               
             </div>
@@ -44,10 +53,10 @@ const Project1 = () => {
           </div>
           
           <div className="project1-details">
-            <h2>The</h2>
-            <h2>Backyard Revival</h2>
+            
+            <h2>Atrium of Light</h2>
             <p className="cover-description">
-            The restaurant has undergone renovations, transforming its previously abandoned backyard into its most significant feature. The backyard now boasts an open courtyard with outdoor seating, surrounded by various fine dining areas, including a family seating section, a smoking area, a bar counter, and a spiral staircase. A pergola with glass elements seamlessly connects these spaces. The spiral staircase leads to the first floor, which is dedicated to family dining.
+            Highlights how the central courtyard becomes the project's key connecting element, uniting surrounding spaces beneath a striking sloped skylight. It conveys a radiant core where light, air, and movement intersect, forming a communal gathering point around which all essential functions converge.
             </p>
             
           </div>
@@ -107,6 +116,31 @@ const Project1 = () => {
             alt="Formula One Grand Prix Race Circuit"
             
           />
+          <ZoomImage
+            src={projectImage7}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          /><ZoomImage
+          src={projectImage8}
+          alt="Formula One Grand Prix Race Circuit"
+          
+        /><ZoomImage
+        src={projectImage9}
+        alt="Formula One Grand Prix Race Circuit"
+        
+      /><ZoomImage
+      src={projectImage10}
+      alt="Formula One Grand Prix Race Circuit"
+      
+    /><ZoomImage
+    src={projectImage11}
+    alt="Formula One Grand Prix Race Circuit"
+    
+  /><ZoomImage
+  src={projectImage12}
+  alt="Formula One Grand Prix Race Circuit"
+  
+/>
           
           <div class="button-section">
   

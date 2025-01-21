@@ -30,7 +30,7 @@ const Project1 = () => {
   
 
   return (
-    <div>
+    <div className="body-p">
       
       {/* Hero Section */}
       <div className="project1-hero">

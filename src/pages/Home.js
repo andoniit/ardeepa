@@ -1,82 +1,61 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import "./Home.css";
-import heroVideo from "../assets/18.gif"; 
-import fallbackImage from "../assets/18.gif"; 
-import gsap from "gsap";
+import heroVideo from "../assets/18.gif";
+import fallbackImage from "../assets/18.gif";
 import Navbar from "../components/Navbar.js";
 
-
 const Home = () => {
-  useEffect(() => {
-    // Animate location tag
-    gsap.fromTo(
-      ".location-tag",
-      {
-        opacity: 0,
-        y: 20, // Start below
-      },
-      {
-        opacity: 1,
-        y: 0, // End at the original position
-        duration: 1.5,
-        ease: "power2.out",
-      }
-    );
+  const locationAnimation = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0, transition: { duration: 1.5, ease: "easeOut" } },
+  };
 
-    // Animate hero content
-    gsap.fromTo(
-      ".hero-content",
-      {
-        opacity: 0,
-        x: 100, // Start off-screen to the right
-      },
-      {
-        opacity: 1,
-        x: 0, // End at the original position
-        duration: 1.5,
-        ease: "power2.out",
-        delay: 0.5,
-      }
-    );
+  const heroContentAnimation = {
+    initial: { opacity: 0, x: 100 },
+    animate: { opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeOut", delay: 0.5 } },
+  };
 
-    // Animate navigation links
-    gsap.fromTo(
-      ".navbar-links li",
-      {
-        opacity: 0,
-        y: -20, // Start above
-      },
-      {
-        opacity: 1,
-        y: 0, // End at the original position
-        duration: 0.8,
-        ease: "power2.out",
-        stagger: 0.2, // Animate each link with a delay
-      }
-    );
-  }, []);
+  const navbarLinksAnimation = {
+    initial: { opacity: 0, y: -20 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut", staggerChildren: 0.2 } },
+  };
 
   return (
-    <div className="home">
+    <motion.div
+      className="home"
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       {/* Global Navbar */}
       <Navbar />
-      
+
       {/* Main Content */}
       <div className="main-content">
-        
-        <div className="hero-content">
+        <motion.div
+          className="hero-content"
+          variants={heroContentAnimation}
+          initial="initial"
+          animate="animate"
+        >
           <h1 className="hero-architecture">ARCHITECTURE</h1>
           <h1 className="hero-title">
             PORT<span className="outline">FOLIO</span>
           </h1>
           <p className="hero-author">Deepa Devangmath</p>
-        </div>
+        </motion.div>
       </div>
 
       {/* Location Tag */}
-      <div className="location-tag">
+      <motion.div
+        className="location-tag"
+        variants={locationAnimation}
+        initial="initial"
+        animate="animate"
+      >
         Chicago, IL
-      </div>
+      </motion.div>
 
       {/* Hero Media */}
       <div className="hero-image">
@@ -85,7 +64,7 @@ const Home = () => {
           <img src={fallbackImage} alt="Hero Fallback" />
         </picture>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
