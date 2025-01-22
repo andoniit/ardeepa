@@ -6,7 +6,7 @@
     justify-content: center;
     position: fixed;
     z-index: 9999;
-    background-color: #141516;
+    background-color: #333;
   }
   
   .introduction svg {
@@ -17,13 +17,13 @@
   }
   
   .introduction svg path {
-    fill: #141516;
+    fill:#333 ;
   }
   
   .introduction p {
     display: flex;
-    color: #f7228c;
-    font-size: 42px;
+    color: #FF007F;
+    font-size: 7em;
     align-items: center;
     position: absolute;
     z-index: 1;
@@ -33,7 +33,7 @@
     display: block;
     width: 10px;
     height: 10px;
-    background-color: white;
+    background-color: #FF007F;
     border-radius: 50%;
     margin-right: 10px;
   }

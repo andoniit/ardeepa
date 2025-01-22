@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.js";
 import "./Projects.css";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
+import Tra from "../components/tra.js"
 
 // Project Images
 import project1 from "../assets/20.png";
@@ -156,4 +157,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Tra(Projects);

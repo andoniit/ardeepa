@@ -1,0 +1,18 @@
+/* tra.css */
+
+.slide-in,
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333; /* Set your preferred background color */
+  transform-origin: bottom ; /* Origin for animation */
+  z-index: 100; /* Ensure it's above other components */
+}
+
+.slide-out {
+  transform-origin: top !important; /* Adjust for the slide-out direction */
+}
+

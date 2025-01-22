@@ -17,10 +17,11 @@ body {
     color: #000000; /* Text color */
     font-family: Arial, sans-serif;
     position: cover;
-    background-image: url("../assets/14.png");
-    background-position: top;
-    background-size: 30em;
+    background-image: url("../assets/23.webp");
+    background-position: left;
+    background-size: 20em;
     background-repeat: no-repeat;
+    background-blend-mode:normal;
   }
   
   .project-hero-content {

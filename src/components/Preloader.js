@@ -6,12 +6,13 @@ const words = ["Hello", "Bonjour", "Ciao", "Olà", "やあ", "Hallå", "Guten ta
 
 const opacity = {
   initial: { opacity: 0 },
-  enter: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
+  animate: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
+  exit: { opacity: 0, transition: { duration: 0.5 } },
 };
 
 const slideUp = {
   initial: { top: "0" },
-  enter: { top: "0", transition: { duration: 0.8 } },
+  animate: { top: "0", transition: { duration: 0.8 } },
   exit: {
     top: "-100vh", // Slide to the top of the screen
     transition: { duration: 1, ease: [0.76, 0, 0.24, 1] },
@@ -28,7 +29,7 @@ export default function Preloader({ onComplete }) {
 
   useEffect(() => {
     if (index === words.length - 1) {
-      setTimeout(onComplete, 1000); // Trigger the onComplete callback after the last word
+      setTimeout(onComplete, 1200); // Allow time for exit animation to complete
       return;
     }
     const timeout = setTimeout(() => {
@@ -53,22 +54,23 @@ export default function Preloader({ onComplete }) {
   };
 
   return (
-    <AnimatePresence>
+    <AnimatePresence mode='wait'>
       <motion.div
+        key="preloader"
         variants={slideUp}
         initial="initial"
-        animate="enter"
+        animate="animate"
         exit="exit"
         className="introduction"
       >
         {dimension.width > 0 && (
           <>
-            <motion.p variants={opacity} initial="initial" animate="enter">
+            <motion.p variants={opacity}>
               <span></span>
               {words[index]}
             </motion.p>
             <svg>
-              <motion.path variants={curve} initial="initial" exit="exit"></motion.path>
+              <motion.path variants={curve}></motion.path>
             </svg>
           </>
         )}

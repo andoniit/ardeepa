@@ -3,9 +3,11 @@ import Navbar from "../components/Navbar.js";
 import "./About.css";
 import skillsImage from "../assets/19.HEIC";
 import { motion, useSpring, useScroll, useTransform } from "framer-motion";
+import Tra from "../components/tra.js"
 
 
 const About = () => {
+  
   const containerRef = useRef();
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -24,6 +26,7 @@ const About = () => {
 
   return (
     <>
+    
     <Navbar />
       <motion.div
       className="page"
@@ -170,4 +173,4 @@ meaningful architectural solutions.
   );
 };
 
-export default About;
+export default Tra(About);

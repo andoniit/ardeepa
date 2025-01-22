@@ -4,6 +4,7 @@ import "./Home.css";
 import heroVideo from "../assets/18.gif";
 import fallbackImage from "../assets/18.gif";
 import Navbar from "../components/Navbar.js";
+import Tra from "../components/tra.js"
 
 const Home = () => {
   const locationAnimation = {
@@ -68,4 +69,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Tra(Home);

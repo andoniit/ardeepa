@@ -8,6 +8,7 @@ import featuredImage from "../assets/12.jpg";
 const Contact = () => {
     return (
         <div>
+          
         <Navbar/>
       <div className="contact-hero">
         

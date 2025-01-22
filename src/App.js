@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Footer from './components/Footer';
-import Preloader from './components/Preloader'; // Import the preloader component
+import Preloader from './components/Preloader'; 
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -15,6 +15,8 @@ import Pro5 from './components/projects/Pro5';
 import Pro6 from './components/projects/Pro6';
 import Pro7 from './components/projects/Pro7';
 import Pro8 from './components/projects/Pro8';
+import { AnimatePresence } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const App = () => {
   const location = useLocation();
@@ -25,7 +27,7 @@ const App = () => {
       const timer = setTimeout(() => {
         setLoading(false); // Stop showing preloader
         sessionStorage.setItem('preloaderShown', 'true'); // Mark preloader as shown
-      }, 2000);
+      }, 2500);
 
       return () => clearTimeout(timer);
     }
@@ -37,6 +39,8 @@ const App = () => {
 
   return (
     <ParallaxProvider>
+      <AnimatePresence mode='wait'>
+      
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -51,14 +55,18 @@ const App = () => {
         <Route path="/pro7" element={<Pro7 />} />
         <Route path="/pro8" element={<Pro8 />} />
       </Routes>
+      </AnimatePresence>
       <Footer />
+      
     </ParallaxProvider>
   );
 };
 
 const AppWrapper = () => (
   <Router>
+    
     <App />
+    
   </Router>
 );
 
