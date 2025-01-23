@@ -85,6 +85,8 @@ body, html {
     padding-top: 10px; 
     text-align: left;
     padding-left: 15px;
+    color: #FF007F;
+    margin-bottom: -10px;
 }
 
 .hero-title {
@@ -106,7 +108,10 @@ body, html {
     margin-top: 20px;
     font-weight: 400;
 }
+.hero-author:hover{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+}
 
 
 /* Hero Image */

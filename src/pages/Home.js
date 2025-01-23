@@ -44,7 +44,7 @@ const Home = () => {
           <h1 className="hero-title">
             PORT<span className="outline">FOLIO</span>
           </h1>
-          <p className="hero-author">Deepa Devangmath</p>
+          <p  className="hero-author" href="/about" >Deepa Devangmath</p>
         </motion.div>
       </div>
 

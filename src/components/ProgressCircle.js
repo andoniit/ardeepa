@@ -47,7 +47,7 @@ const ProgressCircle = () => {
       style={{
         position: "fixed",
         bottom: "80px",
-        right: "20px",
+        right: "10px",
         zIndex: "9999",
         display: "flex",
         alignItems: "center",
@@ -55,7 +55,7 @@ const ProgressCircle = () => {
       }}
     >
       <svg
-        style={{ width: "80px", height: "80px" }}
+        style={{ width: "50px", height: "50px" }}
         className="progress-circle"
         viewBox="0 0 100 100"
       >

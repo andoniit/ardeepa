@@ -7,7 +7,6 @@ import ZoomImage from "../ZoomImage";
 import Tra from "../tra"
 
 
-
 import projectImage from "../pro-1/1_1.webp";
 import projectImage1 from "../pro-1/1_2.webp";
 import projectImage2 from "../pro-1/1_3.webp";
@@ -33,10 +32,17 @@ const Project1 = () => {
 
   return (
     <div className="body-p">
-      
+      <Navbar />
+      <motion.div
+      className="projects-page"
+      initial={{ opacity: 0, y: 50 }} // Start off-screen and faded
+      animate={{ opacity: 1, y: 0 }} // Move to its normal position
+      exit={{ opacity: 0, y: -50 }} // Exit upward with fade
+      transition={{ duration: 0.8, ease: "easeInOut" }} // Smooth transition
+    >
       {/* Hero Section */}
       <div className="project1-hero">
-        <Navbar />
+        
         <div className="project1-hero-content">
           <div className="project1-header">
             <h1>01</h1>
@@ -246,6 +252,7 @@ const Project1 = () => {
 
       
       <ProgressCircle />
+      </motion.div>
     </div>
   );
 };

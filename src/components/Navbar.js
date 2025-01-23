@@ -46,7 +46,7 @@ const Navbar = () => {
     />
     <header className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
       <a href="/" className="navbar-copyright">
-        Ar Deepa Devangmath
+        . Ar Deepa Devangmath
       </a>
       <nav>
         <ul className="navbar-links">

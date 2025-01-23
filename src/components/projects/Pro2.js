@@ -27,10 +27,18 @@ const Project1 = () => {
 
   return (
     <div>
-      
+      <Navbar />
+      <motion.div
+      className="projects-page"
+      initial={{ opacity: 0, y: 50 }} // Start off-screen and faded
+      animate={{ opacity: 1, y: 0 }} // Move to its normal position
+      exit={{ opacity: 0, y: -50 }} // Exit upward with fade
+      transition={{ duration: 0.8, ease: "easeInOut" }} // Smooth transition
+    >
       {/* Hero Section */}
       <div className="project1-hero">
-        <Navbar />
+        
+        
         <div className="project1-hero-content">
           <div className="project1-header">
             <h1>02</h1>
@@ -130,7 +138,7 @@ const Project1 = () => {
         
        
       </div>
-
+      </motion.div>
       <ProgressCircle />
     </div>
   );
