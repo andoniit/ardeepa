@@ -4,6 +4,8 @@ import Navbar from "../Navbar";
 import { motion, useSpring, useScroll } from "motion/react"
 import ProgressCircle from "../ProgressCircle";
 import ZoomImage from "../ZoomImage";
+import Tra from "../tra"
+
 
 import projectImage from "../pro-3/intro.png";
 import projectImage1 from "../pro-3/1.jpg";
@@ -176,4 +178,4 @@ const Project1 = () => {
   );
 };
 
-export default Project1;
+export default Tra(Project1);

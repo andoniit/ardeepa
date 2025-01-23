@@ -6,8 +6,8 @@ import Lenis from "@studio-freight/lenis";
 import Tra from "../components/tra.js"
 
 // Project Images
-import project1 from "../assets/20.png";
-import project2 from "../assets/20.png";
+import project1 from "../assets/24.png";
+import project3 from "../assets/25.png";
 
 // Slider Images
 import slider1 from "../assets/15.webp";
@@ -22,8 +22,8 @@ import slider8 from "../assets/11.png";
 const Projects = () => {
   const projectData = [
     { id: "01", title: "Formula One Grand Prix Race Circuit", subtitle: "Masters 1st term project", img: project1, link: "/pro1" },
-    { id: "02", title: "Urban Campus Housing", subtitle: "Masters 1st term project", img: project2, link: "/pro2" },
-    { id: "03", title: "Atrium of Light", subtitle: "Internship project", img: project2, link: "/pro3" },
+    { id: "02", title: "Urban Campus Housing", subtitle: "Masters 1st term project", img: project3, link: "/pro2" },
+    { id: "03", title: "Atrium of Light", subtitle: "Internship project", img: project3, link: "/pro3" },
 
   ];
 

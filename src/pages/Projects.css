@@ -58,7 +58,7 @@ body {
   }
   
   .project-hero-title h1 {
-    font-size: 7rem;
+    font-size: 3rem;
     font-weight: bold;
     margin: 0;
   }
@@ -119,12 +119,7 @@ body {
     padding: 0.5rem 0;
 }
 
-.content-image img {
-    width: 30em;
-    height: auto;
-    object-fit: cover;
-    
-}
+
 .content-item:hover .content-image img  {
     filter: grayscale(100%);
     transform:scale(0.99); 
@@ -152,7 +147,7 @@ body {
 }
 
 .content-details p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #939393;
     text-transform: capitalize;
     margin-top: -2em;
@@ -160,7 +155,7 @@ body {
     
 }
 .content-details h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #333;
     text-transform: capitalize;
     margin-top: -3em;
@@ -179,14 +174,15 @@ body {
   /* Project Hero Section */
   .project-hero {
     flex-direction: column; /* Stack elements vertically */
-    height: auto; /* Allow dynamic height */
+    height: 100vh; /* Allow dynamic height */
     padding: 2rem;
     background-position: right; /* Center the background image */
     background-size: cover; /* Ensure the image covers the section */
+    background-image: none;
   }
 
   .project-hero-content {
-    flex-direction: column;
+    
     align-items: center;
     padding-top: 6rem; /* Adjust padding */
 
@@ -247,7 +243,7 @@ body {
 
   .content-item {
     flex-direction: column; /* Stack image and details vertically */
-    align-items: center; /* Center align for consistency */
+    align-items:inherit; /* Center align for consistency */
     gap: 1rem;
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;

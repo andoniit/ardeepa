@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar.js";
 import "./contact.css";
+import Tra from "../components/tra.js"
+
 
 // Import the image
 import featuredImage from "../assets/12.jpg"; 
@@ -36,4 +38,4 @@ const Contact = () => {
     );
   };
   
-  export default Contact;
+  export default Tra(Contact);
