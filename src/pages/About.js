@@ -1,12 +1,12 @@
 import React, { useRef,useEffect } from "react";
 import Navbar from "../components/Navbar.js";
 import "./About.css";
-import skillsImage from "../assets/19.HEIC";
+
 import { motion, useSpring, useScroll, useTransform } from "framer-motion";
 import Tra from "../components/tra.js"
 import MagnetLines from '../components/MagnetLines.js';
 
-import project1 from "../assets/1.png";
+import project1 from "../assets/19.jpg";
 import project2 from "../assets/1.png";
 import gsap from "gsap";
 
