@@ -6,7 +6,7 @@ import fallbackImage from "../assets/18.gif";
 import Navbar from "../components/Navbar.js";
 import Tra from "../components/tra.js"
 
-import Spline from '@splinetool/react-spline';
+
 
 
 
