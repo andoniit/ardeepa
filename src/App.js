@@ -17,7 +17,7 @@ import Pro7 from './components/projects/Pro7';
 import Pro8 from './components/projects/Pro8';
 import { AnimatePresence } from 'framer-motion';
 import { motion } from "framer-motion";
-
+import Click from "./components/ClickSpark"
 const App = () => {
   const location = useLocation();
   const [loading, setLoading] = useState(!sessionStorage.getItem('preloaderShown')); // State for preloader
@@ -38,7 +38,14 @@ const App = () => {
   }
 
   return (
+    <>
+    
+
+<Click/>
     <ParallaxProvider>
+      
+      
+
       <AnimatePresence mode='wait'>
       
       <Routes location={location} key={location.pathname}>
@@ -57,8 +64,9 @@ const App = () => {
       </Routes>
       </AnimatePresence>
       <Footer />
-      
+    
     </ParallaxProvider>
+    </>
   );
 };
 

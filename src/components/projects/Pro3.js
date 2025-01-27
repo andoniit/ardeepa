@@ -5,7 +5,7 @@ import { motion, useSpring, useScroll } from "motion/react"
 import ProgressCircle from "../ProgressCircle";
 import ZoomImage from "../ZoomImage";
 import Tra from "../tra"
-
+import Spline from '@splinetool/react-spline';
 
 import projectImage from "../pro-3/intro.png";
 import projectImage1 from "../pro-3/1.jpg";
@@ -76,7 +76,7 @@ const Project1 = () => {
 
       {/* New Section: Image and Description */}
       <div className="project1-extra-section">
-        
+      <Spline scene="https://prod.spline.design/k3eTqA2LUKrQTZoP/scene.splinecode" />
         <div className="project1-image">
           <ZoomImage
             src={projectImage}

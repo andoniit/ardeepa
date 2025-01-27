@@ -3,6 +3,10 @@ import "./Promain.css";
 import Navbar from "../Navbar";
 
 
+
+
+
+
 const Project1 = () => {
   const backgroundStyle = {
     backgroundSize: "cover",
@@ -35,6 +39,7 @@ const Project1 = () => {
           </p>
         </div>
       </div>
+      
     </div>
   );
 };

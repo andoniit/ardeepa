@@ -87,6 +87,7 @@ body, html {
     padding-left: 15px;
     color: #FF007F;
     margin-bottom: -10px;
+    
 }
 
 .hero-title {
@@ -95,23 +96,24 @@ body, html {
     margin: 10px;
     line-height: 1;
     max-width: 100%;
+    
 }
 
 .hero-title .outline {
     color: transparent;
     -webkit-text-stroke: 1px #FF007F;
+    
 }
 
 .hero-author {
-    font-size: 2rem;
+    font-family: 'Melodrama-Medium';
+    font-size: 3rem;
     color: #333;
     margin-top: 20px;
     font-weight: 400;
-}
-.hero-author:hover{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+
 
 
 /* Hero Image */

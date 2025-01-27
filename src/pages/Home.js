@@ -6,6 +6,12 @@ import fallbackImage from "../assets/18.gif";
 import Navbar from "../components/Navbar.js";
 import Tra from "../components/tra.js"
 
+import Spline from '@splinetool/react-spline';
+
+
+
+
+
 const Home = () => {
   const locationAnimation = {
     initial: { opacity: 0, y: 20 },
@@ -31,7 +37,7 @@ const Home = () => {
     >
       {/* Global Navbar */}
       <Navbar />
-
+      
       {/* Main Content */}
       <div className="main-content">
         <motion.div
@@ -40,11 +46,12 @@ const Home = () => {
           initial="initial"
           animate="animate"
         >
+          
           <h1 className="hero-architecture">ARCHITECTURE</h1>
           <h1 className="hero-title">
             PORT<span className="outline">FOLIO</span>
           </h1>
-          <p  className="hero-author" href="/about" >Deepa Devangmath</p>
+          <p  className="hero-author" href="/about" > Ar Deepa Devangmath</p>
         </motion.div>
       </div>
 

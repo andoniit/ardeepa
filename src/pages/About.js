@@ -1,12 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import Navbar from "../components/Navbar.js";
 import "./About.css";
 import skillsImage from "../assets/19.HEIC";
 import { motion, useSpring, useScroll, useTransform } from "framer-motion";
 import Tra from "../components/tra.js"
+import MagnetLines from '../components/MagnetLines.js';
 
+import project1 from "../assets/19.HEIC";
+import project2 from "../assets/1.png";
+import gsap from "gsap";
 
 const About = () => {
+
+
+
+  
   
   const containerRef = useRef();
   const { scrollYProgress } = useScroll({
@@ -15,7 +23,7 @@ const About = () => {
   });
 
   // Transform for parallax effect
-  const y1 = useTransform(scrollYProgress, [0, 1], ["0vh", "50vh"]);
+  const y1 = useTransform(scrollYProgress, [0, 1], ["0vh", "100vh"]);
   const y2 = useTransform(scrollYProgress, [0, 1], ["0vh", "-50vh"]);
 
   const pageVariants = {
@@ -23,6 +31,43 @@ const About = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
     exit: { opacity: 0, y: -100, transition: { duration: 0.5, ease: "easeIn" } },
   };
+  useEffect(() => {
+    const hoverImages = gsap.utils.toArray(".hover-image");
+    const educationDetails = gsap.utils.toArray(".education-details");
+
+    hoverImages.forEach((image, index) => {
+      const detail = educationDetails[index];
+      const setX = gsap.quickSetter(image, "x", "px");
+      const setY = gsap.quickSetter(image, "y", "px");
+
+      const align = (e) => {
+        setX(e.clientX);
+        setY(e.clientY);
+      };
+
+      const startFollow = () => document.addEventListener("mousemove", align);
+      const stopFollow = () => document.removeEventListener("mousemove", align);
+
+      const fade = gsap.to(image, {
+        autoAlpha: 1,
+        duration: 0.2,
+        ease: "power1.out",
+        paused: true,
+        onReverseComplete: stopFollow,
+      });
+
+      detail.addEventListener("mouseenter", (e) => {
+        fade.play();
+        startFollow();
+        align(e);
+      });
+
+      detail.addEventListener("mouseleave", () => {
+        fade.reverse();
+      });
+    });
+  }, []);
+
 
   return (
     <>
@@ -46,7 +91,7 @@ const About = () => {
           ></motion.div>
           <motion.div
             className="hero-background hero-background-2"
-            style={{ y: y2 }}
+            style={{ y: y1 }}
           ></motion.div>
           <header className="hero-header">
             <h1 className="hero-title-about">Deepa Devangmath</h1>
@@ -61,7 +106,7 @@ const About = () => {
         <h2 class="article-title">Deepa Devangmath</h2>
     
         <p>
-        I am a licensed architect from India, currently in my ninth year of studying architecture. My re-
+        I am a <strong>licensed architect from India</strong>, currently in my ninth year of studying architecture. My re-
 search delves into how space impacts human behavior and, in turn, their mental well-being. My de-
 sign philosophy centers on creating harmony between context, built form, and users. I have actively
 collaborated on various live projects and take great interest in conducting case studies of thought-
@@ -76,29 +121,38 @@ meaningful architectural solutions.
   {/* Left Column: Title */}
   <section className="education-skills-section">
   {/* Education Section */}
-  <div className="education-section">
-    <h2>Education</h2>
-    <ul className="education-list">
-      <li>
-        <div className="education-year">2024 - 2025</div>
-        <div className="education-details">
-          Illinois Institute of Technology, Chicago, USA / <strong>Master of Science in Architecture</strong> - 3 terms
-        </div>
-      </li>
-      <li>
-        <div className="education-year">2019 - 2024</div>
-        <div className="education-details">
-          KLS Gogte Institute of Technology, Karnataka, India / <strong >Bachelor of Architecture</strong> - 10 terms
-        </div>
-      </li>
-      <li>
-        <div className="education-year">2016 - 2019</div>
-        <div className="education-details">
-          KLS VPP, Karnataka, India / <strong>Diploma in Architecture</strong> - 6 terms
-        </div>
-      </li>
-    </ul>
-  </div>
+  <section className="education-section">
+          <h2>Education</h2>
+          <ul className="education-list">
+            <li>
+              <div className="education-year">2024 - 2025</div>
+              <div className="education-details">
+                Illinois Institute of Technology, Chicago, USA / <strong>Master of Science in Architecture</strong> - 3 terms
+              </div>
+              <div className="hover-image">
+                <img src={project1} alt="Master's Program" />
+              </div>
+            </li>
+            <li>
+              <div className="education-year">2019 - 2024</div>
+              <div className="education-details">
+                KLS Gogte Institute of Technology, Karnataka, India / <strong>Bachelor of Architecture</strong> - 10 terms
+              </div>
+              <div className="hover-image">
+                <img src={project1} alt="Bachelor's Program" />
+              </div>
+            </li>
+            <li>
+              <div className="education-year">2016 - 2019</div>
+              <div className="education-details">
+                KLS VPP, Karnataka, India / <strong>Diploma in Architecture</strong> - 6 terms
+              </div>
+              <div className="hover-image">
+                <img src={project1} alt="Diploma Program" />
+              </div>
+            </li>
+          </ul>
+        </section>
 
   {/* Skills Section */}
   <div className="skills-section">
@@ -110,9 +164,16 @@ meaningful architectural solutions.
       <li><strong>Adobe:</strong> Photoshop / Illustrator / Indesign / Premiere</li>
     </ul>
   </div>
-  <div className="skills-image-container">
-  <img src={skillsImage} alt="Skills Representation" className="skills-image" />
-</div>
+  <MagnetLines
+ rows={9}
+  columns={9}
+  containerSize="50vmin"
+  lineColor="#333"
+  lineWidth="0.5vmin"
+  lineHeight="3vmin"
+  baseAngle={0}
+  style={{ margin: "2rem auto" }}
+></MagnetLines>
 </section>
 
 

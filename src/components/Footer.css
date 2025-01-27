@@ -46,3 +46,22 @@
   .social-icon:hover {
     color: #000;
   }
+  @media (max-width: 768px) {
+.footer{
+  font-size: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+.footer-center{
+  font-size: 10px;
+}
+.social-icon{
+  font-size: 10px;
+
+}
+.language{
+  font-size: 9px;
+  margin: 0px;
+  align-items: left;
+}
+  }
