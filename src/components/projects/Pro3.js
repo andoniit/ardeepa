@@ -8,18 +8,16 @@ import Tra from "../tra"
 
 
 import projectImage from "../pro-3/intro.png";
-import projectImage1 from "../pro-3/1.jpg";
-import projectImage2 from "../pro-3/2.jpg";
+import projectImage1 from "../pro-3/9.webp";
+import projectImage2 from "../pro-3/7.png";
 import projectImage3 from "../pro-3/3.jpg";
-import projectImage4 from "../pro-3/5.HEIC";
-import projectImage5 from "../pro-3/6.png";
-import projectImage6 from "../pro-3/7.png";
-import projectImage7 from "../pro-3/8.webp";
-import projectImage8 from "../pro-3/9.webp";
-import projectImage9 from "../pro-3/10.webp";
-import projectImage10 from "../pro-3/11.webp";
-import projectImage11 from "../pro-3/12.webp";
-import projectImage12 from "../pro-3/13.webp";
+import projectImage4 from "../pro-3/6.png";
+import projectImage5 from "../pro-3/11.webp";
+import projectImage6 from "../pro-3/12.webp";
+import projectImage7 from "../pro-3/13.webp";
+import projectImage8 from "../pro-3/5.png";
+import projectImage9 from "../pro-3/8.webp";
+
 
 
 
@@ -75,14 +73,14 @@ const Project1 = () => {
       
 
       {/* New Section: Image and Description */}
+
+      <div className="intro2">
+          
+          </div>
       <div className="project1-extra-section">
       
         <div className="project1-image">
-          <ZoomImage
-            src={projectImage}
-            alt="Formula One Grand Prix Race Circuit"
-            
-          />
+          
           
           <ZoomImage
             src={projectImage1}
@@ -138,19 +136,7 @@ const Project1 = () => {
         src={projectImage9}
         alt="Formula One Grand Prix Race Circuit"
         
-      /><ZoomImage
-      src={projectImage10}
-      alt="Formula One Grand Prix Race Circuit"
-      
-    /><ZoomImage
-    src={projectImage11}
-    alt="Formula One Grand Prix Race Circuit"
-    
-  /><ZoomImage
-  src={projectImage12}
-  alt="Formula One Grand Prix Race Circuit"
-  
-/>
+      />
           
           <div class="button-section">
   
@@ -164,7 +150,7 @@ const Project1 = () => {
             </a>
 
   
-            <a class="center-link" href="/projects">All Projects</a>
+            <a class="center-link" href="/projects#projects-section">All Projects</a>
 
   
             <a class="right-link" href="/pro4">

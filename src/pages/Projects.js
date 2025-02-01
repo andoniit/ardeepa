@@ -10,14 +10,14 @@ import project1 from "../assets/24.png";
 import project3 from "../assets/25.png";
 
 // Slider Images
-import slider1 from "../assets/15.webp";
-import slider2 from "../assets/16.webp";
-import slider3 from "../assets/16.webp";
-import slider4 from "../assets/11.png";
-import slider5 from "../assets/13.png";
-import slider6 from "../assets/8.png";
-import slider7 from "../assets/10.png";
-import slider8 from "../assets/11.png";
+import slider1 from "../assets/1p.png";
+import slider2 from "../assets/2p.png";
+import slider3 from "../assets/3p.png";
+import slider4 from "../assets/4p.png";
+import slider5 from "../assets/5p.png";
+import slider6 from "../assets/6p.png";
+import slider7 from "../assets/7p.png";
+import slider8 from "../assets/8p.png";
 
 const Projects = () => {
   const projectData = [
@@ -44,6 +44,13 @@ const Projects = () => {
   const y4 = useTransform(scrollYProgress, [0, 1], [-1000, height * 0.5]);
 
   useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      const section = document.getElementById(hash);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
     const lenis = new Lenis();
 
     const raf = (time) => {
@@ -133,7 +140,7 @@ const Projects = () => {
       </div>
 
       {/* Projects Section */}
-      <div className="table-of-contents-section">
+      <div id="projects-section" className="table-of-contents-section">
         <h1>Recent</h1>
         <h2>Work</h2>
         <p>Click to view projects</p>

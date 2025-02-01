@@ -65,13 +65,12 @@ const Project1 = () => {
       </div>
 
       {/* New Section: Image and Description */}
-      <div className="project1-extra-section">
+      
+          <div className="intro">
+          
+          </div>
+          <div className="project1-extra-section">
         <div className="project1-image">
-          <ZoomImage
-            src={projectImage}
-            alt="Formula One Grand Prix Race Circuit"
-            
-          />
           <h2>Urban Renewal Strategy, Chicago Infrastructure development and budget.</h2>
           <ZoomImage
             src={projectImage1}
@@ -232,7 +231,7 @@ const Project1 = () => {
          
 
   
-  <a class="center-link" href="/projects">All Projects</a>
+  <a class="center-link" href="/projects#projects-section">All Projects</a>
 
   
   <a class="right-link" href="/pro2">

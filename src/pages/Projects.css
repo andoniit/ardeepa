@@ -115,8 +115,9 @@ body {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    border-bottom: 1px solid #ddd;
+    
     padding: 0.5rem 0;
+    
 }
 
 
@@ -126,7 +127,7 @@ body {
 }
 
 .content-image img{
-    width: 30em;
+    width: 25em;
     height: auto;
     object-fit: cover;
     
