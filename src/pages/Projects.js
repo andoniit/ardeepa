@@ -24,6 +24,8 @@ const Projects = () => {
     { id: "01", title: "Formula One Grand Prix Race Circuit", subtitle: "Masters 1st term project", img: project1, link: "/pro1" },
     { id: "02", title: "Urban Campus Housing", subtitle: "Masters 1st term project", img: project3, link: "/pro2" },
     { id: "03", title: "Atrium of Light", subtitle: "Internship project", img: project3, link: "/pro3" },
+    { id: "04", title: "Sweet Retreat", subtitle: "Internship project", img: project3, link: "/pro4" },
+
 
   ];
 

@@ -90,58 +90,34 @@ body {
 }
 .intro {
   display: block;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 2rem auto;
-  padding: 2rem;
   height: 100vh;
-  border-radius: 8px;
   width: auto;
   background-image:url(../pro-1/1_1.webp) ;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .intro1 {
   display: block;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 2rem auto;
-  padding: 2rem;
   height: 100vh;
-  border-radius: 8px;
   width: auto;
   background-image:url(../pro-2/1_2-2.webp) ;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .intro2 {
   display: block;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 2rem auto;
-  padding: 2rem;
   height: 100vh;
-  border-radius: 8px;
   width: auto;
   background-image:url(../pro-3/intro.png) ;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .intro3 {
   display: block;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 2rem auto;
-  padding: 2rem;
   height: 100vh;
-  border-radius: 8px;
   width: auto;
   background-image:url(../pro-4/1.jpg) ;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
