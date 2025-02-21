@@ -205,7 +205,6 @@ article p {
 }
 
 article strong {
-  font-family: "PublicSans-Thin" ;
   color:#FF007F;
   
 }
@@ -264,7 +263,7 @@ article strong {
   font-size: 1em;
   margin: 0 0 0.1em 0;
   color:#333;
-  font-family: 'PublicSans-Regular';
+  
 }
 
 .timeline-event-copy h4 {
@@ -473,7 +472,15 @@ article strong {
   .education-section, .skills-section {
     margin-bottom: 2rem;
     text-align: left;
+    align-items: left;
   }
+  
+  .mg-lines{
+    align-items: left;
+    visibility: hidden;
+  }
+
+
 
   .education-section h2, .skills-section h2 {
     font-size: 1.8rem;
@@ -506,7 +513,7 @@ article strong {
     display: block; /* Stack timeline */
     margin: 2rem 0;
     padding: 1rem;
-    margin-top: 45em;
+    margin-top: 20em;
   }
   .timeline h2{
     margin-left: 3.5em;
@@ -593,7 +600,7 @@ article strong {
 
 
 .hover-image {
-  width: 400px !important;
+  width: 500px;
   height: auto;
   position: fixed;
   top: 0;
@@ -611,3 +618,6 @@ article strong {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+

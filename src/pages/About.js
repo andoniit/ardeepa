@@ -1,18 +1,20 @@
 import React, { useRef,useEffect } from "react";
 import Navbar from "../components/Navbar.js";
 import "./About.css";
+import Lanyard from '../components/Lanyard.js'
 
-import { motion, useSpring, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Tra from "../components/tra.js"
 import MagnetLines from '../components/MagnetLines.js';
 
 import project1 from "../assets/19.jpg";
-import project2 from "../assets/1.png";
+//import project2 from "../assets/1.png";
 import gsap from "gsap";
 
 const About = () => {
+  
 
-
+  
 
   
   
@@ -24,7 +26,7 @@ const About = () => {
 
   // Transform for parallax effect
   const y1 = useTransform(scrollYProgress, [0, 1], ["0vh", "100vh"]);
-  const y2 = useTransform(scrollYProgress, [0, 1], ["0vh", "-50vh"]);
+  //const y2 = useTransform(scrollYProgress, [0, 1], ["0vh", "-50vh"]);
 
   const pageVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -94,6 +96,7 @@ const About = () => {
             style={{ y: y1 }}
           ></motion.div>
           <header className="hero-header">
+            
             <h1 className="hero-title-about">Deepa Devangmath</h1>
             <p className="hero-subtitle">
               Architect | Urban Designer | Interior Specialist
@@ -102,9 +105,11 @@ const About = () => {
         </section>
         
       {/* Main Content */}
+      <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
       <article id="introduction">
         <h2 class="article-title">Deepa Devangmath</h2>
-    
+        
+
         <p>
         I am a <strong>licensed architect from India</strong>, currently in my ninth year of studying architecture. My re-
 search delves into how space impacts human behavior and, in turn, their mental well-being. My de-
@@ -116,6 +121,7 @@ meaningful architectural solutions.
         </p>
         
       </article>
+
       {/* Timeline Section */}
       <section className="experience-section">
   {/* Left Column: Title */}
@@ -163,7 +169,8 @@ meaningful architectural solutions.
       <li><strong>Render:</strong> Lumion / V-Ray / Enscape</li>
       <li><strong>Adobe:</strong> Photoshop / Illustrator / Indesign / Premiere</li>
     </ul>
-  </div>
+    </div>
+  <div className="mg-lines">
   <MagnetLines
  rows={9}
   columns={9}
@@ -172,8 +179,10 @@ meaningful architectural solutions.
   lineWidth="0.5vmin"
   lineHeight="3vmin"
   baseAngle={0}
-  style={{ margin: "2rem auto" }}
+  
+  style={{ margin: "1rem auto" }}
 ></MagnetLines>
+</div>
 </section>
 
 

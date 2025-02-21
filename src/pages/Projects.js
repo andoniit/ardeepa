@@ -6,18 +6,18 @@ import Lenis from "@studio-freight/lenis";
 import Tra from "../components/tra.js"
 
 // Project Images
-import project1 from "../assets/24.png";
+import project1 from "../assets/24-1.png";
 import project3 from "../assets/25.png";
 
 // Slider Images
-import slider1 from "../assets/1p.png";
-import slider2 from "../assets/2p.png";
-import slider3 from "../assets/3p.png";
-import slider4 from "../assets/4p.png";
-import slider5 from "../assets/5p.png";
-import slider6 from "../assets/6p.png";
-import slider7 from "../assets/7p.png";
-import slider8 from "../assets/8p.png";
+import slider1 from "../assets/1p1.jpg";
+import slider2 from "../assets/2p2.jpeg";
+import slider3 from "../assets/3p3.jpg";
+import slider4 from "../assets/4p4.HEIC";
+import slider5 from "../assets/5p5.HEIC";
+import slider6 from "../assets/6p6.jpg";
+import slider7 from "../assets/7p7.jpg";
+import slider8 from "../assets/8p8.jpg";
 
 const Projects = () => {
   const projectData = [
@@ -98,7 +98,7 @@ const Projects = () => {
           </div>
           <div className="project-hero-title">
             <h1>PROJECTS</h1>
-            <p>of Deepa Devangmath</p>
+            <p>Ar Deepa Devangmath</p>
           </div>
         </div>
       </div>
