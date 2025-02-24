@@ -1,6 +1,6 @@
 /* General */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Helvetica !important;
   font-size: 3vh;
   margin: 0;
   padding: 0;
@@ -105,20 +105,18 @@ body {
 article {
   max-width: 46em;
   margin: 2em auto;
-  padding: 1em;
+  padding: 0em;
   font-size: 0.5em;
   line-height: 1.8;
-  padding-top: 5em;
+  padding-top: 0em;
   height: 100vh;
+  align-items: center !important;
   
   
   
 }
 
-article h2 {
-  font-size: 3em;
-  margin-bottom: 0em;
-}
+
 
 .article-title {
   position: relative;
@@ -129,6 +127,8 @@ article h2 {
   font-size: 3em;
   line-height: 1.5em;
   margin: 20px 0;
+  align-items: center;
+  margin-top: 6em;
   
 }
 
@@ -200,8 +200,12 @@ article h2 {
 
 article p {
   margin-bottom: 1.8em;
-  font-size: 25px;
+  font-size: 18px;
   text-align: justify;
+  font-family: Helvetica !important;
+  font-weight: lighter;
+  color: #5d5d5d;
+  align-items: center;
 }
 
 article strong {
@@ -237,6 +241,7 @@ article strong {
   margin: -2em 4em 0.6em 5.3em;
   padding-top: 1em;
   color: #333;
+  font-weight: lighter;
 }
 
 .timeline-event:hover .timeline-event-icon {
@@ -263,6 +268,7 @@ article strong {
   font-size: 1em;
   margin: 0 0 0.1em 0;
   color:#333;
+  font-weight: lighter;
   
 }
 
@@ -271,9 +277,13 @@ article strong {
   margin-bottom: -0.2em;
   margin-top: -0.2em;
   color: #FF007F;
+  font-weight: lighter;
 }
 .timeline-event-copy p{
   font-size: 13px;
+  color: #5d5d5d;
+  font-weight: lighter;
+  
 }
 
 .timeline-event-copy strong {
@@ -300,7 +310,7 @@ article strong {
 
 .timeline-event-thumbnail {
   transition: box-shadow 0.5s ease-in 0.1s;
-  color: white;
+  color: white !important;
   font-size: 0.85em;
   background-color: #333;
   display: inline-block;
@@ -337,7 +347,7 @@ article strong {
 
 .experience-title h2 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: lighter;
   color: #333;
   margin-top: 4em;
   
@@ -345,7 +355,8 @@ article strong {
 }
 .experience-title p {
   font-size: 1rem;
-  color: #333;
+  color: #5d5d5d;
+  font-weight: lighter;
   
 }
 
@@ -376,6 +387,7 @@ article strong {
   font-weight: bold;
   margin-bottom: 0.5rem; /* Reduced margin under heading */
   color: #333;
+  font-weight: lighter;
   
   
 }
@@ -398,13 +410,17 @@ article strong {
   font-size: 1rem;
   color: #FF007F;
   text-align: left !important;
+  font-weight:lighter
+  
   
 }
 
 .education-details {
   flex: 1;
   font-size: 1rem;
-  color: #333;
+  color: #5d5d5d;
+  font-family: Helvetica !important;
+  font-weight: lighter;
 
 }
 
@@ -418,12 +434,14 @@ article strong {
   margin-bottom: 0.5rem; /* Reduced gap between list items */
   font-size: 1rem;
   color: #FF007F;
+  font-weight: lighter;
   
 }
 
 .skills-list li strong {
   font-weight: bold;
   color:#333;
+  font-weight: lighter;
 }
 
 .skills-image-container {

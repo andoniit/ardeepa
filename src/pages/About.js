@@ -1,7 +1,7 @@
 import React, { useRef,useEffect } from "react";
 import Navbar from "../components/Navbar.js";
 import "./About.css";
-import Lanyard from '../components/Lanyard.js'
+
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Tra from "../components/tra.js"
@@ -105,7 +105,7 @@ const About = () => {
         </section>
         
       {/* Main Content */}
-      <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
+      
       <article id="introduction">
         <h2 class="article-title">Deepa Devangmath</h2>
         
@@ -175,7 +175,7 @@ meaningful architectural solutions.
  rows={9}
   columns={9}
   containerSize="50vmin"
-  lineColor="#333"
+  lineColor="rgb(221, 221, 221)"
   lineWidth="0.5vmin"
   lineHeight="3vmin"
   baseAngle={0}

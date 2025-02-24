@@ -1,6 +1,6 @@
 /* General */
 body {
-    font-family: 'Arial', sans-serif;
+  font-family: Helvetica !important;
     font-size: 3vh;
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body {
     height: 100vh;
     background-color: #ffffff; /* Background color */
     color: #000000; /* Text color */
-    font-family: Arial, sans-serif;
+    font-family: Helvetica !important;
     position: cover;
    
     background-position: left;
@@ -127,7 +127,7 @@ body {
 }
 
 .content-image img{
-    width: 25em;
+    width: 20em;
     height: auto;
     object-fit: cover;
     
@@ -140,8 +140,8 @@ body {
 }
 
 .content-details span {
-    font-size: 9rem;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: lighter;
     color: #FF007F;
     margin-left: -1em;
     z-index: 1;

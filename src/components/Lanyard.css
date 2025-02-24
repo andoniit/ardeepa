@@ -1,6 +1,6 @@
 .lanyard-wrapper {
     position: relative;
-    z-index: 0;
+    z-index: 1;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -9,5 +9,6 @@
     transform: scale(1);
     transform-origin: center;
     margin-bottom: -100vh;
-    margin-left: -50vh;
+    margin-left: 6em;
+    
   }
