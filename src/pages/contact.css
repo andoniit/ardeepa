@@ -228,7 +228,7 @@ width: 20%;
   
     .email-link {
       font-size: 1rem; /* Adjust email link size */
-      text-align: left; /* Center-align the email link */
+      text-align: center; /* Center-align the email link */
       margin-top: 1rem; /* Add spacing */
     }
   }

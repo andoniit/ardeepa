@@ -15,8 +15,8 @@
 
   @media (max-width: 768px) {
     .lanyard-wrapper{
-        margin-left: 6em;
+        margin-left: 4.5em;
         margin-bottom: -100vh;
-        z-index: 1;
+        z-index: 0;
     }
   }
