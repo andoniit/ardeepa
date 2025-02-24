@@ -165,7 +165,7 @@ width: 20%;
       flex-direction: column; /* Stack elements vertically */
       justify-content: flex-start; /* Align elements to the top */
       align-items: center; /* Center align for smaller screens */
-      height: auto; /* Allow the height to adjust dynamically */
+      height: 100vh; /* Allow the height to adjust dynamically */
       padding: 1.5rem; /* Adjust padding for small screens */
     }
   
@@ -195,7 +195,7 @@ width: 20%;
   
     .contact-cta {
       font-size: 1rem; /* Adjust CTA size */
-      text-align: center; /* Center-align the CTA */
+      text-align: left; /* Center-align the CTA */
       padding: 0; /* Remove extra padding */
       margin-top: 1rem; /* Add spacing above CTA */
     }
@@ -221,14 +221,14 @@ width: 20%;
   
     .contact-details {
       font-size: 0.8rem; /* Adjust font size for small screens */
-      text-align: center; /* Center-align the details */
+      text-align: left; /* Center-align the details */
       position: static; /* Remove absolute positioning */
       margin-top: 1rem; /* Add spacing */
     }
   
     .email-link {
       font-size: 1rem; /* Adjust email link size */
-      text-align: center; /* Center-align the email link */
+      text-align: left; /* Center-align the email link */
       margin-top: 1rem; /* Add spacing */
     }
   }

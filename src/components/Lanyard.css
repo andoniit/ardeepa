@@ -12,3 +12,11 @@
     margin-left: 6em;
     
   }
+
+  @media (max-width: 768px) {
+    .lanyard-wrapper{
+        margin-left: 6em;
+        margin-bottom: -100vh;
+        z-index: 1;
+    }
+  }
