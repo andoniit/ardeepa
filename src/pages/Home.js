@@ -5,7 +5,7 @@ import heroVideo from "../assets/18.gif";
 import fallbackImage from "../assets/18.gif";
 import Navbar from "../components/Navbar.js";
 import Tra from "../components/tra.js"
-import GoogleAnalytics from "../components/GoogleAnalytics";
+
 
 
 
@@ -36,7 +36,7 @@ const Home = () => {
       animate="animate"
       exit="exit"
     >
-      <GoogleAnalytics measurementId="G-2LL0NLDS0H" />
+      
 
       {/* Global Navbar */}
       <Navbar />
