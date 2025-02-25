@@ -2,6 +2,19 @@ import React from "react";
 import "./Promain.css";
 import Navbar from "../Navbar";
 
+import  { useEffect } from "react";
+
+import ReactGA from "react-ga";
+import {BrowserRouter as Router, Routes, Route, Navigate, useLocation} from 'react-router-dom';
+
+import gsap from "gsap";
+const TRACKING_ID = "G-2LL0NLDS0H";
+function usePageViews() {
+  let location = useLocation();
+  useEffect(() => {
+      ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+}
 
 const Project1 = () => {
   const backgroundStyle = {

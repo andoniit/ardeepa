@@ -1,8 +1,8 @@
 import React, { useRef,useEffect } from "react";
 import Navbar from "../components/Navbar.js";
 import "./About.css";
-
-
+import ReactGA from "react-ga";
+import {BrowserRouter as Router, Routes, Route, Navigate, useLocation} from 'react-router-dom';
 import { motion, useScroll, useTransform } from "framer-motion";
 import Tra from "../components/tra.js"
 import MagnetLines from '../components/MagnetLines.js';
@@ -10,7 +10,8 @@ import MagnetLines from '../components/MagnetLines.js';
 import project1 from "../assets/19.jpg";
 //import project2 from "../assets/1.png";
 import gsap from "gsap";
-
+const TRACKING_ID = "G-2LL0NLDS0H";
+ReactGA.initialize(TRACKING_ID);
 const About = () => {
   
 
@@ -23,6 +24,12 @@ const About = () => {
     target: containerRef,
     offset: ["start start", "end end"],
   });
+  function usePageViews() {
+    let location = useLocation();
+    useEffect(() => {
+        ReactGA.pageview(location.pathname + location.search);
+    }, [location]);
+}
 
   // Transform for parallax effect
   const y1 = useTransform(scrollYProgress, [0, 1], ["0vh", "100vh"]);

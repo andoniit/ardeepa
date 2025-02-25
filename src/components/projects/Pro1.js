@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Promain.css";
 import Navbar from "../Navbar";
 import { motion, useSpring, useScroll } from "motion/react"
@@ -22,10 +22,17 @@ import projectImage11 from "../pro-1/perspective.webp";
 
 
 
+import ReactGA from "react-ga";
+import {BrowserRouter as Router, Routes, Route, Navigate, useLocation} from 'react-router-dom';
 
-
-
-
+import gsap from "gsap";
+const TRACKING_ID = "G-2LL0NLDS0H";
+function usePageViews() {
+  let location = useLocation();
+  useEffect(() => {
+      ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+}
 
 const Project1 = () => {
   

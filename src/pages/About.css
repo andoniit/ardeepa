@@ -73,14 +73,16 @@ body {
   z-index: 1;
   
   
+  
 }
 
 .hero-title-about {
-  max-width: 1.5em;
+  max-width: 1em;
   margin: 0;
-  font-size: 9vh;
-  font-weight: bold;
+  font-size: 7vh;
+  font-weight: lighter;
   line-height: 0.9;
+  font-family: Helvetica !important;
   
 }
 
@@ -93,11 +95,7 @@ body {
   color: #333;
 }
 
-@media only screen and (min-width: 32em) {
-  .hero-title {
-    font-size: 10vh;
-  }
-}
+
 
 
 

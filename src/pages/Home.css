@@ -77,7 +77,7 @@ body, html {
 }
 
 .hero-architecture {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 400;
     margin: 0;
@@ -91,8 +91,8 @@ body, html {
 }
 
 .hero-title {
-    font-size: 7rem;
-    font-weight: bold;
+    font-size: 5rem;
+    font-weight:lighter;
     margin: 10px;
     line-height: 1;
     max-width: 100%;
@@ -106,7 +106,7 @@ body, html {
 }
 
 .hero-author {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #333;
     margin-top: 20px;
     font-weight: 400;

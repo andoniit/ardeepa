@@ -4,7 +4,8 @@ import "./Projects.css";
 import { motion, useTransform, useScroll } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 import Tra from "../components/tra.js"
-
+import ReactGA from "react-ga";
+import {BrowserRouter as Router, Routes, Route, Navigate, useLocation} from 'react-router-dom';
 // Project Images
 import project1 from "../assets/24-1.png";
 import project2 from "../assets/25-2.png";
@@ -24,6 +25,10 @@ import slider6 from "../assets/6p6.jpg";
 import slider7 from "../assets/7p7.jpg";
 import slider8 from "../assets/8p8.jpg";
 
+
+const TRACKING_ID = "G-2LL0NLDS0H";
+ReactGA.initialize(TRACKING_ID);
+
 const Projects = () => {
   const projectData = [
     { id: "01", title: "Formula One Grand Prix Race Circuit", subtitle: "Masters 1st term project", img: project1, link: "/pro1" },
@@ -35,6 +40,13 @@ const Projects = () => {
 
 
   ];
+  function usePageViews() {
+    let location = useLocation();
+    useEffect(() => {
+        ReactGA.pageview(location.pathname + location.search);
+    }, [location]);
+}
+
 
   const gallery = useRef(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
@@ -151,7 +163,7 @@ const Projects = () => {
       {/* Projects Section */}
       <div id="projects-section" className="table-of-contents-section">
         <h1>Recent</h1>
-        <h2>Work</h2>
+        <h2>Works</h2>
         <p>Click to view projects</p>
         <div className="contents-list">
           {projectData.map((project) => (
