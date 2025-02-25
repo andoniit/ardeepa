@@ -44,7 +44,7 @@ const Project1 = () => {
             <h1>02</h1>
             <div className="project1-year">
               <p>2023</p>
-              <span>Masters 1st Term Project</span>
+              <span>Internship project</span>
               <span>Location : Belgaum, India</span>
             </div>
           </div>

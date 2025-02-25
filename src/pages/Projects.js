@@ -27,10 +27,10 @@ import slider8 from "../assets/8p8.jpg";
 const Projects = () => {
   const projectData = [
     { id: "01", title: "Formula One Grand Prix Race Circuit", subtitle: "Masters 1st term project", img: project1, link: "/pro1" },
-    { id: "02", title: "Urban Campus Housing", subtitle: "Masters 1st term project", img: project2, link: "/pro2" },
-    { id: "03", title: "Atrium of Light", subtitle: "Internship project", img: project3, link: "/pro3" },
-    { id: "04", title: "Sweet Retreat", subtitle: "Internship project", img: project4, link: "/pro4" },
-    { id: "04", title: "Sweet Retreat", subtitle: "Internship project", img: project5, link: "/pro5" },
+    { id: "02", title: "The Backyard Revival", subtitle: "Internship project", img: project2, link: "/pro2" },
+    { id: "03", title: "Atrium of Light", subtitle: "Internship project", img: project4, link: "/pro3" },
+    { id: "04", title: "Sweet Retreat", subtitle: "Internship project", img: project5, link: "/pro4" },
+    { id: "05", title: "Garden", subtitle: "Internship project", img: project3, link: "/pro5" },
 
 
 
