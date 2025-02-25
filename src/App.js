@@ -16,12 +16,14 @@ import Pro6 from './components/projects/Pro6';
 import Pro7 from './components/projects/Pro7';
 import Pro8 from './components/projects/Pro8';
 import { AnimatePresence } from 'framer-motion';
-import { motion } from "framer-motion";
+
 import Click from "./components/ClickSpark"
+
+import ReactGA from "react-ga4";
 const App = () => {
   const location = useLocation();
   const [loading, setLoading] = useState(!sessionStorage.getItem('preloaderShown')); // State for preloader
-
+  ReactGA.initialize("G-2LL0NLDS0H");
   useEffect(() => {
     if (loading) {
       const timer = setTimeout(() => {

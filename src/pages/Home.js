@@ -5,20 +5,26 @@ import heroVideo from "../assets/18.gif";
 import fallbackImage from "../assets/18.gif";
 import Navbar from "../components/Navbar.js";
 import Tra from "../components/tra.js"
+import ReactGA from "react-ga";
+
+import {BrowserRouter as Router, Routes, Route, Navigate, useLocation} from 'react-router-dom';
+import {useEffect} from 'react';
 
 
 
-
-
-
-
-
+const TRACKING_ID = "G-2LL0NLDS0H";
+ReactGA.initialize(TRACKING_ID);
 const Home = () => {
   const locationAnimation = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0, transition: { duration: 1.5, ease: "easeOut" } },
   };
-
+  function usePageViews() {
+    let location = useLocation();
+    useEffect(() => {
+        ReactGA.pageview(location.pathname + location.search);
+    }, [location]);
+}
   const heroContentAnimation = {
     initial: { opacity: 0, x: 100 },
     animate: { opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeOut", delay: 0.5 } },
