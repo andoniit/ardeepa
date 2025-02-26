@@ -73,6 +73,7 @@ const Home = () => {
       >
         Chicago, IL
       </motion.div>
+      
 
       {/* Hero Media */}
       <div className="hero-image">

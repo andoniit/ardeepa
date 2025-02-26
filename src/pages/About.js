@@ -8,7 +8,9 @@ import Tra from "../components/tra.js"
 import MagnetLines from '../components/MagnetLines.js';
 
 import project1 from "../assets/19.jpg";
-//import project2 from "../assets/1.png";
+import project2 from "../assets/7-1024x1024.png";
+import project3 from "../assets/diploma.jpg";
+
 import gsap from "gsap";
 const TRACKING_ID = "G-2LL0NLDS0H";
 ReactGA.initialize(TRACKING_ID);
@@ -152,7 +154,7 @@ meaningful architectural solutions.
                 KLS Gogte Institute of Technology, Karnataka, India / <strong>Bachelor of Architecture</strong> - 10 terms
               </div>
               <div className="hover-image">
-                <img src={project1} alt="Bachelor's Program" />
+                <img src={project2} alt="Bachelor's Program" />
               </div>
             </li>
             <li>
@@ -161,7 +163,7 @@ meaningful architectural solutions.
                 KLS VPP, Karnataka, India / <strong>Diploma in Architecture</strong> - 6 terms
               </div>
               <div className="hover-image">
-                <img src={project1} alt="Diploma Program" />
+                <img src={project3} alt="Diploma Program" />
               </div>
             </li>
           </ul>
