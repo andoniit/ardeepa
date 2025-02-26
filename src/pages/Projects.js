@@ -35,7 +35,7 @@ const Projects = () => {
     { id: "02", title: "The Backyard Revival", subtitle: "Internship project", img: project2, link: "/pro2" },
     { id: "03", title: "Atrium of Light", subtitle: "Internship project", img: project4, link: "/pro3" },
     { id: "04", title: "Sweet Retreat", subtitle: "Internship project", img: project5, link: "/pro4" },
-    { id: "05", title: "Garden", subtitle: "Internship project", img: project3, link: "/pro5" },
+    { id: "05", title: "Backyard Reawakening", subtitle: "Internship project", img: project3, link: "/pro5" },
 
 
 
