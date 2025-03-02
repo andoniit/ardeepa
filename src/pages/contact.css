@@ -52,6 +52,17 @@
     
     z-index: 5 !important;
   }
+  .contact-cta-li{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: right;
+    padding-right: 0px;
+    
+    z-index: 5 !important;
+  } 
   
   .contact-hero-right {
     flex: 1;
@@ -198,6 +209,12 @@ width: 20%;
       text-align: left; /* Center-align the CTA */
       padding: 0; /* Remove extra padding */
       margin-top: 1rem; /* Add spacing above CTA */
+    }
+    .contact-cta-li {
+      font-size: 1rem; /* Adjust CTA size */
+      text-align: left; /* Center-align the CTA */
+      padding: 0; /* Remove extra padding */
+      margin-top: 3rem; /* Add spacing above CTA */
     }
   
     .contact-hero-right {
