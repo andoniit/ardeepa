@@ -232,3 +232,56 @@ width: 20%;
       margin-top: 1rem; /* Add spacing */
     }
   }
+
+
+
+  /* From Uiverse.io by alshahwan */ 
+/* From uiverse.io by @alshahwan */
+/* From uiverse.io by @alshahwan */
+button {
+  background-color: #fff;
+  border: 1px solid #FF007F;
+  padding: 5px;
+  position: relative;
+  width: 7.2em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  border-radius: 0.4em;
+  align-items: left;
+}
+
+button p {
+  position: absolute;
+  top: 0.4em;
+  left: 1.2em;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  color: #FF007F;
+}
+
+button svg {
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff
+}
+
+button:hover p {
+  left: 0.6em;
+  color: #fff
+}
+
+button:hover svg {
+  opacity: 1;
+}
+
+button:hover {
+  background-color: #FF007F;
+}
