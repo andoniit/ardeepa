@@ -122,16 +122,16 @@ article {
   vertical-align: center;
   color: transparent;
   white-space: nowrap;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1.5em;
   margin: 20px 0;
   align-items: center;
-  margin-top: 6em;
-  
+  margin-top: 4em;
+  font-weight: 400;
 }
 
 .article-title:before {
-  content: 'Hello .';
+  content: "Hello, I'm .";
   position: absolute;
   width: 100%;
   top: 0;
@@ -208,6 +208,7 @@ article p {
 
 article strong {
   color:#FF007F;
+  font-weight: lighter;
   
 }
 
@@ -476,6 +477,7 @@ article strong {
   article{
     height: 100vh;
     width: 46vh;
+    margin-bottom: 40em;
   }
 
   .education-skills-section {

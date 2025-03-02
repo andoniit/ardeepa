@@ -120,13 +120,12 @@ const About = () => {
         
 
         <p>
-        I am a <strong>licensed architect from India</strong>, currently in my ninth year of studying architecture. My re-
-search delves into how space impacts human behavior and, in turn, their mental well-being. My de-
-sign philosophy centers on creating harmony between context, built form, and users. I have actively
-collaborated on various live projects and take great interest in conducting case studies of thought-
-fully designed spaces, focusing on their construction methods, material choices, and zoning strat-
-egies. I strongly believe that collaboration, empathy, and attentive listening are key to developing
-meaningful architectural solutions.
+        Deepa Devangmath,  based in <strong>Chicago, USA </strong> 
+ I'm a licensed architect in my  <strong>ninth year</strong> of architectural studies. I spent<strong> three years </strong>  at a construction and architecture firm, where I curated and designed six co-housing projects. During this time, I conducted frequent site visits to oversee construction, which gave me hands-on experience with structural systems and materials. I also worked closely with structural engineers, elevator and plumbing specialists, and on-site teams, gaining insight into their challenges and refining project drawings to address these issues.
+<br></br><br></br>
+Following that, I spent <strong>  two years </strong>  at two different architectural firms focusing on fabrication design, where I strengthened my skills in detailed furniture and flooring design.<strong>  Having completed nine studio projects </strong>  during my academic journey and several personal projects, I felt motivated to support the neurodivergent community through my work.<strong>  I'm currently researching inclusive design for neurodivergent individuals, </strong>  using evidence-based design guidelines shaped by psychology professionals and high-functioning individuals.
+<br></br><br></br>
+<strong> I am now seeking a summer internship </strong>  that will enable me to delve deeper into these inclusive design projects and contribute my expertise to a forward-thinking team. I look forward to the opportunity to collaborate and share my passion for creating spaces that accommodate a diverse range of needs.
         </p>
         
       </article>
