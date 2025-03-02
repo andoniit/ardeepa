@@ -23,10 +23,11 @@
   .introduction p {
     display: flex;
     color: #FF007F;
-    font-size: 7em;
+    font-size: 1.5em;
     align-items: center;
     position: absolute;
     z-index: 1;
+    font-weight: 300;
   }
   
   .introduction p span {
@@ -41,6 +42,6 @@
 
   @media (max-width: 768px) {
     .introduction p {
-      font-size: 3em;
+      font-size: 1em;
     }
   }
