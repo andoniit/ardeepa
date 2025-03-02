@@ -9,7 +9,7 @@ import { MeshLineGeometry, MeshLineMaterial } from 'meshline';
 import cardGLB from "../assets/card.glb";
 import lanyard from "../assets/lanyard.png";
 
-import * as THREE from 'three';
+import * as THREE from 'three'; 
 import './Lanyard.css';
 
 extend({ MeshLineGeometry, MeshLineMaterial });

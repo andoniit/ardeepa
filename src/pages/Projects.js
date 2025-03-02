@@ -5,6 +5,8 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 import Tra from "../components/tra.js"
 import ReactGA from "react-ga";
+
+import TiltedCard from '../components/TiltedCard.js';
 import {BrowserRouter as Router, Routes, Route, Navigate, useLocation} from 'react-router-dom';
 // Project Images
 import project1 from "../assets/24-1.png";
@@ -169,7 +171,25 @@ const Projects = () => {
           {projectData.map((project) => (
             <a href={project.link} key={project.id} className="content-item" rel="noopener noreferrer">
               <div className="content-image">
-                <img src={project.img} alt={project.title} />
+              
+
+<TiltedCard
+  imageSrc={project.img}
+  altText={project.title}
+  captionText="Click to view projects"
+  containerHeight="auto"
+  containerWidth="auto"
+  imageHeight="200px"
+  imageWidth="20em"
+  rotateAmplitude={12}
+  scaleOnHover={1.2}
+  showMobileWarning={false}
+  showTooltip={true}
+  displayOverlayContent={true}
+  object-fit="cover"
+  
+/>
+  
               </div>
               <div className="content-details">
                 <span>{project.id}</span>
