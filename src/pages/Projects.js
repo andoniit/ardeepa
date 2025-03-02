@@ -180,7 +180,7 @@ const Projects = () => {
   containerHeight="auto"
   containerWidth="auto"
   imageHeight={window.innerWidth < 768 ? "150px" : "200px"}
-  imageWidth={window.innerWidth < 768 ? "180vw" : "20em"}
+  imageWidth={window.innerWidth < 768 ? "150vw" : "20em"}
   rotateAmplitude={12}
   scaleOnHover={1.2}
   showMobileWarning={window.innerWidth < 768}
