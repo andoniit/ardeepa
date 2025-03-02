@@ -1,6 +1,6 @@
 /* General */
 body {
-  font-family: Helvetica !important;
+  font-family: Helvetica, Arial, sans-serif !important;
   font-size: 3vh;
   margin: 0;
   padding: 0;
@@ -102,8 +102,9 @@ body {
 /* Article Section */
 article {
   max-width: 100em;
-  width: 46em;
-
+  width: 60em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 2em auto;
   padding: 0em;
   font-size: 0.5em;
@@ -206,6 +207,8 @@ article p {
   font-weight: 200;
   color: #5d5d5d;
   align-items: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 article strong {
