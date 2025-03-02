@@ -60,7 +60,7 @@ const Home = () => {
           <h1 className="hero-title">
             PORT<span className="outline">FOLIO</span>
           </h1>
-          <p  className="hero-author" href="/about" > Ar Deepa Devangmath</p>
+          <p  className="hero-author" href="/about" > Ar&nbsp;Deepa&nbsp;Devangmath</p>
         </motion.div>
       </div>
 

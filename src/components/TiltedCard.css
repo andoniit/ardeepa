@@ -24,6 +24,10 @@
     .tilted-card-caption {
       display: none;
     }
+    .tilted-card-img{
+        width: auto !important; /* Make the image responsive */
+        height: auto;
+    }
   }
   
   .tilted-card-inner {
