@@ -5,7 +5,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   
 }
 
@@ -101,8 +103,8 @@ body {
 
 /* Article Section */
 article {
-  max-width: 100em;
-  width: 60em;
+  width: 90%;
+  max-width: 49em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 2em auto;
@@ -117,7 +119,13 @@ article {
   
 }
 
-
+@media (max-width: 1200px) {
+  article {
+    width: 95%;
+    margin: 1em auto;
+    /* adjust font-size or padding as needed */
+  }
+}
 
 .article-title {
   position: relative;
@@ -201,7 +209,7 @@ article {
 
 article p {
   margin-bottom: 1.8em;
-  font-size: 18px;
+  font-size: 1.3em;
   text-align: justify;
   font-family: Helvetica !important;
   font-weight: 200;
@@ -209,6 +217,7 @@ article p {
   align-items: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 article strong {
