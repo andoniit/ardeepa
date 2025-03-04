@@ -94,6 +94,7 @@ body, html {
     padding-left: 15px;
     color: #FF007F;
     margin-bottom: -10px;
+    letter-spacing: 1cap;
     
 }
 
@@ -108,15 +109,16 @@ body, html {
 
 .hero-title .outline {
     color: transparent;
-    -webkit-text-stroke: 1px #FF007F;
+    color:  #FF007F;
     
 }
 
 .hero-author {
     font-size: 1rem;
     color: #333;
-    margin-top: 20px;
+    margin-top: 1px;
     font-weight: 400;
+    margin-right: 15px;
 
 }
 
@@ -243,13 +245,11 @@ body, html {
 
     }
 
-    .hero-title .outline {
-        color: transparent;
-        -webkit-text-stroke: 1px #FF007F;
-    }
+    
 
     .hero-architecture {
         font-size: 1rem;
+        letter-spacing: 0.1cap;
     }
 
     .hero-author {

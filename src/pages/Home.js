@@ -63,7 +63,7 @@ const Home = () => {
           <p  className="hero-author" href="/about" > Ar&nbsp;Deepa&nbsp;Devangmath</p>
         </motion.div>
       </div>
-
+      
       {/* Location Tag */}
       <motion.div
         className="location-tag"

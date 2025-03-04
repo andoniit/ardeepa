@@ -45,24 +45,14 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #000;
-    text-decoration: underline;
+    text-decoration: none !important;
     cursor: pointer;
     text-align: right;
     padding-right: 0px;
     
     z-index: 5 !important;
   }
-  .contact-cta-li{
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #000;
-    text-decoration: underline;
-    cursor: pointer;
-    text-align: right;
-    padding-right: 0px;
-    
-    z-index: 5 !important;
-  } 
+  
   
   .contact-hero-right {
     flex: 1;
@@ -108,9 +98,10 @@
     font-size: 1.2rem;
     font-weight: 300;
     color: #333;
-    text-decoration: underline;
+    
     cursor: pointer;
     z-index: 4;
+    text-decoration: none !important;
   }
   
   .email-link:hover {
@@ -147,7 +138,7 @@ width: 20%;
   
     .contact-cta {
       font-size: 1.5rem; /* Make the CTA more prominent */
-      padding-right: 3em; /* Remove additional padding */
+      padding-right: 0em; /* Remove additional padding */
     }
   
     .contact-hero-right {

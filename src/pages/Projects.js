@@ -6,6 +6,7 @@ import Lenis from "@studio-freight/lenis";
 import Tra from "../components/tra.js"
 import ReactGA from "react-ga";
 
+
 import TiltedCard from '../components/TiltedCard.js';
 import {BrowserRouter as Router, Routes, Route, Navigate, useLocation} from 'react-router-dom';
 // Project Images
@@ -166,6 +167,7 @@ const Projects = () => {
       <div id="projects-section" className="table-of-contents-section">
         <h1>Recent</h1>
         <h2>Works</h2>
+        
         <p>Click to view projects</p>
         <div className="contents-list">
           {projectData.map((project) => (
