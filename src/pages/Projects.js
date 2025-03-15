@@ -8,7 +8,7 @@ import ReactGA from "react-ga";
 
 
 import TiltedCard from '../components/TiltedCard.js';
-import {BrowserRouter as Router, Routes, Route, Navigate, useLocation} from 'react-router-dom';
+
 // Project Images
 import project1 from "../assets/24-1.png";
 import project2 from "../assets/25-2.png";
@@ -43,12 +43,7 @@ const Projects = () => {
 
 
   ];
-  function usePageViews() {
-    let location = useLocation();
-    useEffect(() => {
-        ReactGA.pageview(location.pathname + location.search);
-    }, [location]);
-}
+  
 
 
   const gallery = useRef(null);

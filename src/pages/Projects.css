@@ -169,6 +169,115 @@ body {
 .contents-list a{
     text-decoration: none;
 }
+@media(max-width:1040px){
+  .project-hero {
+    flex-direction: column; /* Stack elements vertically */
+    height: 100vh; /* Allow dynamic height */
+    padding: 2rem;
+    background-position: right; /* Center the background image */
+    background-size: cover; /* Ensure the image covers the section */
+    background-image: none;
+  }
+
+  .project-hero-content {
+    
+    align-items: center;
+    padding-top: 6rem; /* Adjust padding */
+
+  }
+
+  .project-hero-year {
+    margin-right: 0em;
+    margin-bottom: 1rem; /* Add space below */
+  }
+
+  .project-hero-year p {
+    font-size: 0.8rem; /* Reduce font size */
+    
+  }
+
+  .project-hero-year .line {
+    height: 2rem; /* Adjust line height */
+  }
+
+  .project-hero-title {
+    text-align: center; /* Center-align for smaller screens */
+  }
+
+  .project-hero-title h1 {
+    font-size: 2rem; /* Reduce title size */
+  }
+
+  .project-hero-title p {
+    font-size: 1rem; /* Adjust subtitle size */
+  }
+
+  /* Table of Contents Section */
+  .table-of-contents-section {
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: left; /* Align text to left */
+  }
+
+  .table-of-contents-section h2 {
+    font-size: 4rem; /* Reduce heading size */
+    margin-bottom: 1rem;
+  }
+
+  .table-of-contents-section h1 {
+    font-size: 1.5rem; /* Reduce subheading size */
+    margin-top: 50px;
+    margin-bottom: -50px;
+  }
+
+  .table-of-contents-section p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+
+  .contents-list {
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem; /* Reduce gap */
+  }
+
+  .content-item {
+    flex-direction: column; /* Stack image and details vertically */
+    align-items:inherit; /* Center align for consistency */
+    gap: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+
+  .content-image img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .content-details {
+    align-items: left; /* Center align details */
+  }
+
+  .content-details span {
+    font-size: 6rem; /* Reduce the font size */
+    margin-left: 0; /* Center the text */
+  }
+
+  .content-details h3 {
+    font-size: 2rem; /* Adjust heading size */
+    margin: 0.5rem 0; /* Add spacing */
+  }
+
+  .content-details p {
+    font-size: 1rem; /* Adjust font size */
+    margin: 0.5rem 0; /* Add spacing */
+    text-align: center; /* Center align the text */
+  }
+  
+  
+  .gallery-column {
+    min-width: 100px !important;
+  }
+
+}
 
 /* Mobile View Adjustments */
 @media (max-width: 768px) {

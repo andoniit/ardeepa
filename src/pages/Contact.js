@@ -4,7 +4,7 @@ import "./contact.css";
 import Tra from "../components/tra.js"
 import { motion, useTransform, useScroll } from "framer-motion";
 import Lanyard from '../components/Lanyard.js'
-import CircularText from '../components/CircularText';
+
 
 import ReactGA from "react-ga";
 import {BrowserRouter as Router, Routes, Route, Navigate, useLocation} from 'react-router-dom';

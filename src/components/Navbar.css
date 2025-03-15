@@ -26,12 +26,14 @@ mask-size: auto;
 mask-composite: add;
 mask-mode: match-source;
 opacity: 1;
+z-index: 800;
  
 }
 
 .navbar-copyright {
   font-size: 1rem;
   color:inherit;
+  z-index: 800;
 }
 
 .navbar-links {
@@ -41,11 +43,13 @@ opacity: 1;
   margin: 0;
   padding: 0;
   font-family: Helvetica,Arial,  sans-serif !important;
+  z-index: 800;
 }
 
 .navbar-links li {
   margin: 0;
   padding: 0;
+  z-index: 800;
 }
 
 .navbar-links li a {
@@ -53,6 +57,7 @@ opacity: 1;
   text-decoration: none;
   font-weight: 100;
   transition: color 0.3s ease-in-out;
+  z-index: 800;
 }
 
 .navbar-links li a:hover {
@@ -64,6 +69,7 @@ opacity: 1;
   color: #000;
   font-weight: 200;
   transition: color 0.3s ease-in-out;
+  z-index: 800;
 }
 
 .navbar-copyright:hover {
@@ -82,5 +88,9 @@ opacity: 1;
 
   .navbar-links {
     font-size: smaller;
+    gap:20px
+  }
+  .navbar {
+    padding: 20px 10px;
   }
 }

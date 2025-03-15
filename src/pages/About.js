@@ -2,7 +2,7 @@ import React, { useRef,useEffect } from "react";
 import Navbar from "../components/Navbar.js";
 import "./About.css";
 import ReactGA from "react-ga";
-import {BrowserRouter as Router, Routes, Route, Navigate, useLocation} from 'react-router-dom';
+import {BrowserRouter as useLocation} from 'react-router-dom';
 import { motion, useScroll, useTransform } from "framer-motion";
 import Tra from "../components/tra.js"
 import MagnetLines from '../components/MagnetLines.js';
@@ -10,7 +10,7 @@ import MagnetLines from '../components/MagnetLines.js';
 import project1 from "../assets/19.jpg";
 import project2 from "../assets/7-1024x1024.png";
 import project3 from "../assets/diploma.jpg";
-
+import { LinkedInEmbed } from 'react-social-media-embed';
 import gsap from "gsap";
 const TRACKING_ID = "G-2LL0NLDS0H";
 ReactGA.initialize(TRACKING_ID);
@@ -197,6 +197,17 @@ Following that, I spent <strong>  two years </strong>  at two different architec
   {/* Right Column: Timeline */}
   <div className="timeline">
   <h2>Work Experience</h2>
+  {/* Event 0 */}
+  <div className="timeline-event">
+      <div className="timeline-event-icon"></div>
+      <div className="timeline-event-copy">
+        <p className="timeline-event-thumbnail">Jan. 2025 – Present </p>
+        <h3>Research Assistant</h3>
+        <h4>Illinois Institute of Technology</h4>
+        <p>As a Circulation Desk Operator, I manage the organization and upkeep of library books, ensuring they are properly arranged for easy access. My 
+responsibilities include checking books in and out for library users, as well as labeling and cataloging new arrivals to maintain an efficient system.</p>
+      </div>
+    </div>
     {/* Event 1 */}
     <div className="timeline-event">
       <div className="timeline-event-icon"></div>
@@ -246,6 +257,7 @@ Following that, I spent <strong>  two years </strong>  at two different architec
 </section>
 </div>
 </motion.div>
+
     </>
     
   );

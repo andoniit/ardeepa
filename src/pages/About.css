@@ -474,7 +474,127 @@ article strong {
 
 /* Responsive Styles */
 
+@media(max-width:1040px){
+  .hero {
+    padding: 1rem;
+    text-align: center;
+    height: 90vh; /* Allow content to flow */
+  }
+  .hero-header{
+    padding-right: 150px;
+  }
+  .hero-title-about {
+    font-size: 4vh;
+    margin-bottom: 1rem;
+  }
+  article{
+    height: 100vh;
+    width: 46vh;
+    margin-bottom: -20em;
+  }
 
+  .education-skills-section {
+    display: block; /* Stack sections vertically */
+    margin: 0rem;
+    padding: 1rem;
+    margin-top: 0em;
+  }
+
+  .education-section, .skills-section {
+    margin-bottom: 2rem;
+    text-align: left;
+    align-items: left;
+  }
+  
+  .mg-lines{
+    align-items: left;
+    visibility: hidden;
+  }
+
+
+
+  .education-section h2, .skills-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .education-list, .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .education-list li, .skills-list li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills-image-container {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .skills-image {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .timeline {
+    display: block; /* Stack timeline */
+    margin: 2rem 0;
+    padding: 1rem;
+    margin-top: 10em;
+  }
+  .timeline h2{
+    margin-left: 3.5em;
+    font-size: 1.8rem;
+  }
+
+  .timeline-event {
+    margin-bottom: 2rem;
+  }
+
+  .timeline-event-copy {
+    text-align: left;
+    margin-left: -2em;
+  }
+  .timeline-event-icon{
+    margin-left: -0.5em;
+  }
+
+  .experience-section {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  .experience-title {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .experience-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .skills-list li strong {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .education-year {
+    text-align: center;
+    font-size: 1rem;
+  }
+  article p{
+    font-size: 13px;
+  }
+}
 
 /* Mobile Specific Styles */
 @media (max-width: 768px) {
@@ -641,7 +761,7 @@ article strong {
   left: 0;
   visibility: hidden;
   opacity: 0;
-  z-index: 1000;
+  z-index: 1;
   pointer-events: none;
 }
 
