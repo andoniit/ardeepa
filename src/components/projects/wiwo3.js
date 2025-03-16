@@ -18,17 +18,7 @@ import projectImage6 from "../wiwo-3/7.jpg";
 import projectImage7 from "../wiwo-3/8.jpg";
 import projectImage8 from "../wiwo-3/9.jpg";
 import projectImage9 from "../wiwo-3/10.jpg";
-import projectImage10 from "../wiwo-3/11.jpg";
-import projectImage11 from "../wiwo-3/12.jpg";
-import projectImage12 from "../wiwo-3/13.jpg";
-import projectImage13 from "../wiwo-3/14.jpg";
-import projectImage14 from "../wiwo-3/15.jpg";
-import projectImage15 from "../wiwo-3/16.jpg";
-import projectImage16 from "../wiwo-3/17.jpg";
-import projectImage17 from "../wiwo-3/18.jpg";
-import projectImage18 from "../wiwo-3/19.jpg";
-import projectImage19 from "../wiwo-3/20.jpg";
-import projectImage20 from "../wiwo-3/21.jpg";
+
 
 
 
@@ -100,8 +90,8 @@ const Project1 = () => {
         </div>
 
         {/* Panel 2: Big Image 1 */}
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage} alt="Project Image 1" />
+        <div className="panel img">
+          <ZoomImage src={projectImage} alt="Project Image 1"/> 
         </div>
 
         {/* Panel 3: Big Image 2 */}
@@ -149,63 +139,7 @@ const Project1 = () => {
           <ZoomImage src={projectImage9} alt="Project Image 10" />
           
         </div>
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage} alt="Project Image 1" />
-        </div>
-
-        {/* Panel 3: Big Image 2 */}
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage10} alt="Project Image 2" />
-        </div>
-
-        {/* Panel 4: Big Image 3 */}
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage11} alt="Project Image 3" />
-        </div>
-
-        {/* Panel 5: Big Image 4 */}
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage12} alt="Project Image 4" />
-        </div>
-
-        {/* Panel 6: Big Image 5 */}
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage13} alt="Project Image 5" />
-        </div>
-
-        {/* Panel 7: Big Image 6 */}
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage14} alt="Project Image 6" />
-        </div>
-
-        {/* Panel 8: Big Image 7 */}
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage15} alt="Project Image 7" />
-        </div>
-
-        {/* Panel 9: Big Image 8 */}
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage16} alt="Project Image 8" />
-        </div>
-
-        {/* Panel 10: Big Image 9 */}
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage17} alt="Project Image 9" />
-        </div>
-
-        {/* Panel 11: Big Image 10 */}
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage18} alt="Project Image 10" />
-          
-        </div>
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage19} alt="Project Image 10" />
-          
-        </div>
-        <div className="panel section-wiwo">
-          <ZoomImage src={projectImage20} alt="Project Image 10" />
-          
-        </div>
+        
         
         
       </motion.div>

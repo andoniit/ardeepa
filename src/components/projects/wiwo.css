@@ -1,4 +1,12 @@
 
+.body{
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 .muller-hero {
   width: 100%;
   min-height: 100vh;
@@ -166,26 +174,36 @@ z-index: 1;
 }
 
 /* Each panel fills one viewport */
-.panel {
+.panel  {
   width: 100vw;
   height: 96vh;
   flex-shrink: 0;
   scroll-snap-align: start;
   justify-content: center;
+  align-items: center;
 }
 
 /* Big images in each panel */
 .panel img {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   object-fit:contain;
   align-items: center;
   justify-content: center;
-  margin-top: 2em;
+  margin-top: 5em;
   margin-bottom: 2em;
+  margin-left: 10em;
+
 }
 
-
+.section-wiwo{
+  width: 100vw;
+  height: 96vh;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -204,6 +222,18 @@ z-index: 1;
     height: auto;
     scroll-snap-align: none;
   }
+  .panel img {
+    width: 70%;
+    height: 70%;
+    object-fit:contain;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 0em;
+  
+  }
+  
 }
 
 

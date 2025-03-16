@@ -207,45 +207,44 @@ height:9em;
     gap: 8px;
     
    
-    width: 120vh;
+    width: 100%;
+    margin-bottom: 2em;
     
   }
   
-  .first { grid-area: first; font-size: 1em; color: #5d5d5d; }
+  .first { grid-area: first; font-size: 1em; color: #5d5d5d; font-weight: 300;  }
   .first:hover{
     color: #FF007F;
   }
   
-  .second { grid-area: second;font-size: 1em; color: #5d5d5d;}
+  .second { grid-area: second;font-size: 1em; color: #5d5d5d;font-weight: 300;}
   .second:hover{
     color: #FF007F;
   }
-  .third { grid-area: third;font-size: 1em; color: #5d5d5d;}
+  .third { grid-area: third;font-size: 1em; color: #5d5d5d;font-weight: 300;}
   .third:hover{
     color: #FF007F;
   }
 
   .first p{
     font-size: 0.5em; font-weight: lighter;
-     color: #5d5d5d;
     padding-right: 20px;
-    line-height: 1.2; 
-  
-    
+    line-height: 1.2;
+    margin-bottom: -1.7em; 
   }
   .second p{
     font-size: 0.5em; font-weight: lighter;
-    
     padding-right: 20px;
     line-height: 1.2; 
+    margin-bottom: -1.7em; 
   
     
   }
   .third p{
     font-size: 0.5em; font-weight: lighter;
-    
     padding-right: 20px;
     line-height: 1.2; 
+    margin-bottom: -1.7em; 
   
     
   }
