@@ -93,7 +93,8 @@ body {
   height: 100vh;
   width: auto;
   background-image:url(../pro-1/1_1.webp) ;
-  background-size: cover;
+  background-size:cover;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .intro1 {
