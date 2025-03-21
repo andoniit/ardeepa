@@ -19,6 +19,10 @@ import projectImage8 from "../pro-1/Second floor_1.webp";
 import projectImage9 from "../pro-1/fourth floor_1_1.webp";
 import projectImage10 from "../pro-1/section_1_1.webp";
 import projectImage11 from "../pro-1/perspective.webp";
+import projectImage12 from "../pro-1/1.png";
+import projectImage13 from "../pro-1/2.png";
+import projectImage14 from "../pro-1/3.png";
+
 
 
 
@@ -161,10 +165,22 @@ const Project1 = () => {
             
           />
           <ZoomImage
+            src={projectImage12}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          <ZoomImage
+            src={projectImage13}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          <ZoomImage
             src={projectImage5}
             alt="Formula One Grand Prix Race Circuit"
             
           />
+          
+          
           <ZoomImage
             src={projectImage6}
             alt="Formula One Grand Prix Race Circuit"
@@ -225,6 +241,11 @@ const Project1 = () => {
 </ul>
 <ZoomImage
             src={projectImage10}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          <ZoomImage
+            src={projectImage14}
             alt="Formula One Grand Prix Race Circuit"
             
           />
