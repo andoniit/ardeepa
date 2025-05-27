@@ -53,6 +53,11 @@ const Navbar = () => {
           <li><a href="/about">About</a></li>
           <li><a href="/projects">Projects</a></li>
           <li><a href="/contact">Contact</a></li>
+          <li><a style={{
+          color: "#FF007F",
+          fontWeight: "bold"
+        }}  href="/assets/Ar.Deepa_Full time roles_2025.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+
         </ul>
       </nav>
     </header>

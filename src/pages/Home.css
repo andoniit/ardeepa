@@ -461,3 +461,34 @@ height:9em;
       }
 }
 
+.video-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.video-section-title {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.video-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap; /* prevents wrapping to new line */
+  overflow-x: auto;   /* adds horizontal scroll on small screens */
+  padding-bottom: 10px;
+}
+
+.video-item {
+  flex: 0 0 auto;
+  max-width: 350px;
+}
+
+.video-item h3 {
+  margin-bottom: 10px;
+  color: #FF007F;
+  font-weight: 100;
+}

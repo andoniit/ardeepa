@@ -226,6 +226,93 @@ const Home = () => {
             </a>
           </div>
         </motion.section>
+        <motion.section
+          className="layout-2"
+          variants={fadeInUp}
+          initial="initial"
+          animate="animate"
+        >
+          <div className="first">
+          BIM Revit
+            <br />
+            <p>
+              In the Advanced BIM/Revit Modeling course, we explored the software interface, key tools, and multiple modeling techniques. Beyond just creating models, we also gained a comprehensive understanding of how Building Information Modeling (BIM) 
+            </p>
+            <br />
+            <a className="right-link" href="/wiwo4">
+              <span className="right-link__text">read more</span>
+              <span className="right-link__line"></span>
+              <span className="right-link__arrow">
+                <span></span>
+                <span></span>
+              </span>
+            </a>
+          </div>
+          
+          <div className="second">
+          History Sketches
+
+            <p>
+              As part of my architectural studies, I created a series of hand-drawn and digital sketches that chronologically explore key moments in architectural history. These sketches span from ancient civilizations—such as Egyptian, Greek, and Roman architecture—through to Gothic cathedrals, Renaissance 
+            </p>
+            <br />
+            <a className="right-link" href="/wiwo5">
+              <span className="right-link__text">read more</span>
+              <span className="right-link__line"></span>
+              <span className="right-link__arrow">
+                <span></span>
+                <span></span>
+              </span>
+            </a>
+          </div>
+          
+        </motion.section>
+        <section className="video-section">
+  <h2 className="video-section-title">Featured Videos</h2>
+  <div className="video-row">
+    <div className="video-item">
+      <h3>Sex in Architecture</h3>
+      <iframe
+        width="350"
+        height="200"
+        src="https://www.youtube.com/embed/W-ie9n7I0KU?si=rbfGfzzH-1I9UxoY"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+    <div className="video-item">
+      <h3>AI in Architecture</h3>
+      <iframe
+        width="350"
+        height="200"
+        src="https://www.youtube.com/embed/HuZBbe8QjYA?si=wG1oMwz3HYlqCX_w"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+    <div className="video-item">
+      <h3>Japnese Archi</h3>
+      <iframe
+        width="350"
+        height="200"
+        src="https://www.youtube.com/embed/Rcm1jfEO2ws?si=SVlaqkkMfxjor5CF"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</section>
       </motion.div>
       </motion.div>
     </>

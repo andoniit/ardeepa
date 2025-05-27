@@ -59,6 +59,16 @@ z-index: 800;
   transition: color 0.3s ease-in-out;
   z-index: 800;
 }
+.navbar-links li b {
+  color: #FF007F;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  z-index: 800;
+}
+.navbar-links li b:hover {
+  color: #333;
+}
 
 .navbar-links li a:hover {
   color: #FF007F;

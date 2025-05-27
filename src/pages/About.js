@@ -106,9 +106,13 @@ const About = () => {
           ></motion.div>
           <header className="hero-header">
             
-            <h1 className="hero-title-about">Deepa Devangmath</h1>
+            <h1 className="hero-title-about">Ar.Deepa Devangmath,</h1>
+            <h2 className="hero-sub-about">AIAs,S.M.ASCE</h2>
             <p className="hero-subtitle">
-              Architect | Urban Designer | Interior Specialist
+             Architect | Researcher | Architectural designer
+            </p>
+            <p className="hero-subtitle-loc">
+             Chicago,IL
             </p>
           </header>
         </section>

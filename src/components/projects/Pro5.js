@@ -175,7 +175,14 @@ const Project1 = () => {
             <a class="center-link" href="/projects#projects-section">All Projects</a>
 
   
-            
+            <a class="right-link" href="/pro6">
+            <span class="right-link__text">Next Project</span>
+            <span class="right-link__line"></span>
+            <span class="right-link__arrow">
+            <span></span>
+            <span></span>
+            </span>
+            </a>
             </div>
           </div>
         

@@ -15,6 +15,8 @@ import project2 from "../assets/25-2.png";
 import project3 from "../assets/26-3.png";
 import project4 from "../assets/27-4.png";
 import project5 from "../assets/28-5.png";
+import project6 from "../assets/28-5.png";
+
 
 //import project3 from "../assets/25.png";
 
@@ -39,6 +41,8 @@ const Projects = () => {
     { id: "03", title: "Atrium of Light", subtitle: "Internship project", img: project4, link: "/pro3" },
     { id: "04", title: "Sweet Retreat", subtitle: "Internship project", img: project5, link: "/pro4" },
     { id: "05", title: "Backyard Reawakening", subtitle: "Internship project", img: project3, link: "/pro5" },
+    { id: "06", title: "Square Group Project", subtitle: "Housing  Community", img: project6, link: "/pro6" },
+
 
 
 

@@ -12,9 +12,14 @@ import Pro2 from './components/projects/Pro2';
 import Pro3 from './components/projects/Pro3';
 import Pro4 from './components/projects/Pro4';
 import Pro5 from './components/projects/Pro5';
+import Pro6 from './components/projects/Pro6';
 import Wiwo1 from './components/projects/wiwo1';
 import Wiwo2 from './components/projects/wiwo2';
 import Wiwo3 from './components/projects/wiwo3';
+import Wiwo4 from './components/projects/wiwo4';
+import Wiwo5 from './components/projects/wiwo5';
+
+
 import { AnimatePresence } from 'framer-motion';
 
 import Click from "./components/ClickSpark"
@@ -60,9 +65,14 @@ const App = () => {
         <Route path="/pro3" element={<Pro3 />} />
         <Route path="/pro4" element={<Pro4 />} />
         <Route path="/pro5" element={<Pro5 />} />
+        <Route path="/pro6" element={<Pro6 />} />
         <Route path="/wiwo1" element={<Wiwo1 />} />
         <Route path="/wiwo2" element={<Wiwo2 />} />
         <Route path="/wiwo3" element={<Wiwo3 />} />
+        <Route path="/wiwo4" element={<Wiwo4 />} />
+        <Route path="/wiwo5" element={<Wiwo5 />} />
+
+
       </Routes>
       </AnimatePresence>
       <Footer />

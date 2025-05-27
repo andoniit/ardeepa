@@ -129,6 +129,36 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.intro5 {
+  display: block;
+  height: 100vh;
+  width: auto;
+  background-image:url(../pro-6/1.webp) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  background-position: center;
+}
+.introwiwo6 {
+  display: block;
+  height: 100vh;
+  width: auto;
+  background-image:url(../wiwo-4/1.webp) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  background-position: center;
+}
+.introwiwo7 {
+  display: block;
+  height: 100vh;
+  width: auto;
+  background-image:url(../wiwo-5/1.jpg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  background-position: center;
+}
 
 .project1-image {
   flex: 1;

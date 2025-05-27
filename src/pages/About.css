@@ -80,7 +80,8 @@ body {
 }
 
 .hero-title-about {
-  max-width: 1em;
+  width: 4em;
+  max-width: 5em;
   margin: 0;
   font-size: 7vh;
   font-weight: lighter;
@@ -88,6 +89,18 @@ body {
   font-family: Helvetica,Arial,  sans-serif !important;
   
 }
+.hero-sub-about {
+  width: 4em;
+  max-width: 5em;
+  margin: 0;
+  font-size: 5vh;
+  font-weight: lighter;
+  line-height: 0.9;
+  font-family: Helvetica,Arial,  sans-serif !important;
+  padding-top: 0.3em;
+  
+}
+
 
 
 
@@ -98,7 +111,12 @@ body {
   color: #333;
 }
 
-
+.hero-subtitle-loc {
+  font-size: 3vh;
+  font-weight: 400;
+  margin: 0.5em 0;
+  color: #FF007F;
+}
 
 
 
