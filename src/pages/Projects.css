@@ -105,70 +105,103 @@ body {
    
 }
 
-.contents-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.grid-gallery {
+  display: grid;
+  /* 3 columns min 300px, auto-fit shrinks to fewer columns on small screens */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.content-item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    
-    padding: 0.5rem 0;
-    
+/* EACH GRID ITEM (anchor) */
+.grid-item {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* IMAGE WRAPPER: holds the tilted card + ID overlay */
+.grid-image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* TILTED IMAGE (TiltedCard renders <img> internally) */
+.grid-image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.grid-item:hover .grid-image-wrapper img {
+  filter: grayscale(100%);
+  transform: scale(0.99);
+}
+
+/* ID OVERLAY in top-left */
+.grid-number {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 3rem;      /* matches .content-details span earlier */
+  font-weight: lighter;
+  color: #FF007F;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* TEXT UNDER IMAGE */
+.grid-text {
+  margin-top: 1rem;
+  text-decoration: none !important;  
+}
+
+.grid-text h3 {
+  font-size: 2rem;      /* same as previous .content-details h3 */
+  color: #333;
+  font-weight: 200;
+  text-transform: capitalize;
+  margin: 0;   
+  text-align: left;
+  text-decoration: none !important;        /* remove default margin */
+}
+
+.grid-text p {
+  font-size: 1rem;      /* same as previous .content-details p */
+  color: #939393;
+  text-transform: capitalize;
+  margin: 0.25rem 0 0 0; /* small spacing below title */
+  text-decoration: none !important;  
+}
+
+/* On very small screens, ensure text doesn't overflow */
+@media (max-width: 480px) {
+  .grid-text h3 {
+    font-size: 1.5rem;
+  }
+  .grid-number {
+    font-size: 2.5rem;
+  }
+  .grid-gallery {
+  display: grid;
+  /* 3 columns min 300px, auto-fit shrinks to fewer columns on small screens */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-left: -2em;
+}
 }
 
 
-.content-item:hover .content-image img  {
-    filter: grayscale(100%);
-    transform:scale(0.99); 
-}
-
-.content-image img{
-    width: 20em;
-    height: auto;
-    object-fit: cover;
-    
-}
-
-.content-details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.content-details span {
-    font-size: 4rem;
-    font-weight: lighter;
-    color: #FF007F;
-    margin-left: -1em;
-    z-index: 1;
-}
-
-.content-details p {
-    font-size: 1rem;
-    color: #939393;
-    text-transform: capitalize;
-    margin-top: -2em;
-    margin-left: 1.4em;
-    
-}
-.content-details h3 {
-    font-size: 2rem;
-    color: #333;
-    text-transform: capitalize;
-    margin-top: -2em;
-    text-align: left;
-    font-weight: 200;
-    margin-left: 0.4em;
-    
-}
-
-.contents-list a{
-    text-decoration: none;
-}
 @media(max-width:1040px){
   .project-hero {
     flex-direction: column; /* Stack elements vertically */
@@ -236,7 +269,7 @@ body {
 
   .contents-list {
     flex-direction: column; /* Stack items vertically */
-    gap: 1rem; /* Reduce gap */
+    gap: 0rem; /* Reduce gap */
   }
 
   .content-item {

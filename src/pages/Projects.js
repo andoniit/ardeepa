@@ -169,36 +169,40 @@ const Projects = () => {
         
         <p>Click to view projects</p>
         <div className="contents-list">
-          {projectData.map((project) => (
-            <a href={project.link} key={project.id} className="content-item" rel="noopener noreferrer">
-              <div className="content-image">
-              
-
-              <TiltedCard
-  imageSrc={project.img}
-  altText={project.title}
-  captionText="Click to view projects"
-  containerHeight="auto"
-  containerWidth="auto"
-  imageHeight={window.innerWidth < 768 ? "150px" : "200px"}
-  imageWidth={window.innerWidth < 768 ? "150vw" : "20em"}
-  rotateAmplitude={12}
-  scaleOnHover={1.2}
-  showMobileWarning={window.innerWidth < 768}
-  showTooltip={true}
-  displayOverlayContent={true}
-  objectFit="cover"
-/>
-  
-              </div>
-              <div className="content-details">
-                <span>{project.id}</span>
-                <h3>{project.title}</h3>
-                <p>{project.subtitle}</p>
-              </div>
-            </a>
-          ))}
+  <div className="grid-gallery">
+    {projectData.map((project) => (
+      <a
+        href={project.link}
+        key={project.id}
+        className="grid-item"
+        rel="noopener noreferrer"
+      >
+        <div className="grid-image-wrapper">
+          <TiltedCard
+            imageSrc={project.img}
+            altText={project.title}
+            captionText="Click to view projects"
+            containerHeight="auto"
+            containerWidth="auto"
+            imageHeight={window.innerWidth < 768 ? "150px" : "200px"}
+            imageWidth={window.innerWidth < 768 ? "150vw" : "20em"}
+            rotateAmplitude={12}
+            scaleOnHover={1.2}
+            showMobileWarning={window.innerWidth < 768}
+            showTooltip={true}
+            displayOverlayContent={true}
+            objectFit="cover"
+          />
+          <div className="grid-number">{project.id}</div>
         </div>
+        <div className="grid-text">
+          <h3>{project.title}</h3>
+          <p>{project.subtitle}</p>
+        </div>
+      </a>
+    ))}
+  </div>
+</div>
       </div>
     </motion.div>
     </>
