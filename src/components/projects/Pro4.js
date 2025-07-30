@@ -7,14 +7,12 @@ import ZoomImage from "../ZoomImage";
 import Tra from "../tra"
 
 
-import projectImage from "../pro-4/1.jpg";
+
 import projectImage1 from "../pro-4/2.jpg";
 import projectImage2 from "../pro-4/3.jpg";
 import projectImage3 from "../pro-4/4.jpg";
 import projectImage4 from "../pro-4/5.jpg";
 import projectImage5 from "../pro-4/6.jpg";
-import projectImage6 from "../pro-4/7.jpg";
-import projectImage7 from "../pro-4/8.jpg";
 
 
 
@@ -64,9 +62,14 @@ const Project1 = () => {
           <div className="project1-header">
             <h1>04</h1>
             <div className="project1-year">
-              <p>2024</p>
-              <span>Internship project</span>
-              <span>Location : Belgaum, India</span>
+              <p>SPRING 2025</p>
+              <span>ARCHITECTURAL STRATEGIES FOR SUPPORTING AUTISTIC STUDENTS
+</span>
+              <span>PROJECT TYPE: MASTERS RESEARCH</span>
+              <span>MENTOR: VEDRAN MIMICA, JONATHAN MILLER
+</span>
+<span>LOCATION: CHICAGO
+</span>
               
             </div>
             
@@ -74,10 +77,12 @@ const Project1 = () => {
           
           <div className="project1-details">
             
-            <h2>Sweet Retreat</h2>
+            <h2>NEURODIVERSE</h2>
+            <h2>
+FRIENDLY UNIVERSITY SPACES
+            </h2>
             <p className="cover-description">
-            A Contemporary Ice Cream Parlor Concept , 
-This is an ice-cream parlor by Bel Gelato, whose signature candy-colored and pastel-hued gelato served as the inspiration for the store's interior design.
+            
             </p>
             
           </div>
@@ -131,16 +136,7 @@ This is an ice-cream parlor by Bel Gelato, whose signature candy-colored and pas
             alt="Formula One Grand Prix Race Circuit"
             
           />
-          <ZoomImage
-            src={projectImage6}
-            alt="Formula One Grand Prix Race Circuit"
-            
-          />
-          <ZoomImage
-            src={projectImage7}
-            alt="Formula One Grand Prix Race Circuit"
-            
-          />
+          
           
           <div class="button-section">
   

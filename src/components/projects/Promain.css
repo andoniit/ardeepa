@@ -92,48 +92,53 @@ body {
   display: block;
   height: 100vh;
   width: auto;
-  background-image:url(../pro-1/1_1.webp) ;
+  background-image:url(../pro-1/cover.jpg) ;
   background-size:cover;
   background-position: top;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .intro1 {
   display: block;
   height: 100vh;
   width: auto;
-  background-image:url(../pro-2/1_2-2.webp) ;
+  background-image:url(../pro-2/cover.jpg) ;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .intro2 {
   display: block;
   height: 100vh;
   width: auto;
-  background-image:url(../pro-3/intro.png) ;
+  background-image:url(../pro-3/cover.jpg) ;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .intro3 {
   display: block;
   height: 100vh;
   width: auto;
-  background-image:url(../pro-4/1.jpg) ;
+  background-image:url(../pro-4/cover.jpg) ;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .intro4 {
   display: block;
   height: 100vh;
   width: auto;
-  background-image:url(../pro-5/Intro.png) ;
+  background-image:url(../pro-5/cover.jpg) ;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .intro5 {
   display: block;
   height: 100vh;
   width: auto;
-  background-image:url(../pro-6/1.webp) ;
+  background-image:url(../pro-6/cover.jpg) ;
   background-size: cover;
   background-repeat: no-repeat;
   align-content: center;
@@ -154,6 +159,26 @@ body {
   height: 100vh;
   width: auto;
   background-image:url(../wiwo-5/1.jpg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  background-position: center;
+}
+.intro8 {
+  display: block;
+  height: 100vh;
+  width: auto;
+  background-image:url(../pro-7/cover.jpg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  background-position: center;
+}
+.intro9 {
+  display: block;
+  height: 100vh;
+  width: auto;
+  background-image:url(../pro-8/cover.jpg) ;
   background-size: cover;
   background-repeat: no-repeat;
   align-content: center;

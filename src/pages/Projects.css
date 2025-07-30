@@ -75,9 +75,9 @@ body {
 .table-of-contents-section {
     margin: 2rem auto;
     padding: 1.5rem;
-    max-width: 1200px;
+    max-width: 85%;
     text-align: center;
-    margin-top: -3em;
+    margin-top: 2em;
     z-index: 1;
 }
 
@@ -109,7 +109,7 @@ body {
   display: grid;
   /* 3 columns min 300px, auto-fit shrinks to fewer columns on small screens */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 12rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
@@ -148,9 +148,9 @@ body {
 /* ID OVERLAY in top-left */
 .grid-number {
   position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  font-size: 3rem;      /* matches .content-details span earlier */
+  top: 20.5rem;
+  left: 0.1rem;
+  font-size: 1rem;      /* matches .content-details span earlier */
   font-weight: lighter;
   color: #FF007F;
   z-index: 10;
@@ -164,7 +164,7 @@ body {
 }
 
 .grid-text h3 {
-  font-size: 2rem;      /* same as previous .content-details h3 */
+  font-size: 1rem;      /* same as previous .content-details h3 */
   color: #333;
   font-weight: 200;
   text-transform: capitalize;
@@ -174,7 +174,7 @@ body {
 }
 
 .grid-text p {
-  font-size: 1rem;      /* same as previous .content-details p */
+  font-size: 0.8rem;      /* same as previous .content-details p */
   color: #939393;
   text-transform: capitalize;
   margin: 0.25rem 0 0 0; /* small spacing below title */

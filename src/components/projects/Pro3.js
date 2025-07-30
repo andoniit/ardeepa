@@ -7,16 +7,13 @@ import ZoomImage from "../ZoomImage";
 import Tra from "../tra"
 
 
-import projectImage from "../pro-3/intro.png";
-import projectImage1 from "../pro-3/9.webp";
-import projectImage2 from "../pro-3/7.png";
+import projectImage from "../pro-3/2.jpg";
+import projectImage1 from "../pro-3/3.jpg";
+import projectImage2 from "../pro-3/4.jpg";
 import projectImage3 from "../pro-3/3.jpg";
-import projectImage4 from "../pro-3/6.png";
-import projectImage5 from "../pro-3/11.webp";
-import projectImage6 from "../pro-3/12.webp";
-import projectImage7 from "../pro-3/13.webp";
-import projectImage8 from "../pro-3/5.png";
-import projectImage9 from "../pro-3/8.webp";
+import projectImage4 from "../pro-3/5.jpg";
+import projectImage5 from "../pro-3/6.jpg";
+import projectImage6 from "../pro-3/7.jpg";
 
 
 import  { useEffect } from "react";
@@ -65,19 +62,20 @@ const Project1 = () => {
           <div className="project1-header">
             <h1>03</h1>
             <div className="project1-year">
-              <p>2024</p>
-              <span>Internship project</span>
-              <span>Location : Belgaum, India</span>
-              
+              <p>SPRING 2025</p>
+              <span>PARAMETRIC PAVILION FOR PUBLIC ENGAGEMENT </span>
+              <span>PROJECT TYPE-INDEPENDENT DESIGN RESEARCH</span>
+              <span>LOCATION-CHICAGO</span>
             </div>
             
           </div>
           
           <div className="project1-details">
             
-            <h2>Atrium of Light</h2>
+            <h2>URBAN CANOPY</h2>
             <p className="cover-description">
-            Highlights how the central courtyard becomes the project's key connecting element, uniting surrounding spaces beneath a striking sloped skylight. It conveys a radiant core where light, air, and movement intersect, forming a communal gathering point around which all essential functions converge.
+            Urban Canopy” is a parametric pavilion designed as a central gathering space within a busy urban context. Nestled within a garden-like plaza, this lightweight structure offers a dynamic environment where people can socialize, relax, or enjoy a coffee beside a central fountain. The form and pattern of the pavilion were developed using advanced parametric design tools in Grasshopper, including Lunchbox, Ngon, Weaverbird, and Paneling Tools. Environmental performance, solar exposure, and comfort analysis were integrated using Ladybug, ensuring a climate-responsive design that enhances user experience. The pavilion exemplifies the fusion of computation, form-finding, and public space programming to foster community interaction in dense cityscapes.
+
             </p>
             
           </div>
@@ -96,7 +94,7 @@ const Project1 = () => {
           
           
           <ZoomImage
-            src={projectImage1}
+            src={projectImage}
             alt="Formula One Grand Prix Race Circuit"
             
           />
@@ -106,6 +104,15 @@ const Project1 = () => {
 
 
           <ZoomImage
+            src={projectImage1}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          
+
+
+
+            <ZoomImage
             src={projectImage2}
             alt="Formula One Grand Prix Race Circuit"
             
@@ -113,16 +120,12 @@ const Project1 = () => {
           
 
 
-
             <ZoomImage
             src={projectImage3}
             alt="Formula One Grand Prix Race Circuit"
             
           />
-          
-
-
-            <ZoomImage
+          <ZoomImage
             src={projectImage4}
             alt="Formula One Grand Prix Race Circuit"
             
@@ -137,19 +140,7 @@ const Project1 = () => {
             alt="Formula One Grand Prix Race Circuit"
             
           />
-          <ZoomImage
-            src={projectImage7}
-            alt="Formula One Grand Prix Race Circuit"
-            
-          /><ZoomImage
-          src={projectImage8}
-          alt="Formula One Grand Prix Race Circuit"
-          
-        /><ZoomImage
-        src={projectImage9}
-        alt="Formula One Grand Prix Race Circuit"
-        
-      />
+         
           
           <div class="button-section">
   

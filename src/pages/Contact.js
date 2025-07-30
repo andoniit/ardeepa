@@ -44,7 +44,7 @@ const Contact = () => {
           <p className="contact-number">Lets connect .</p>
           <h1 className="contact-title">Contact.</h1>
           <div class="contact-cta">
-  <a href="mailto:ddevangmath@hawk.iit.edu" class="email-link">Send an Email <br/>ddevangmath@hawk.iit.edu</a>
+  <a href="mailto:ddevangmath@hawk.iit.edu" class="email-link">Send an Email <br/>ddevangmath@hawk.illinoistech.edu</a>
   <br></br>
   <br></br>
   <button onClick={() => window.location.href = "https://www.linkedin.com/in/deepa-devangmath"}>

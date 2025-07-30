@@ -7,12 +7,15 @@ import ZoomImage from "../ZoomImage";
 import Tra from "../tra"
 
 
-import projectImage1 from "../pro-6/1.webp";
-import projectImage2 from "../pro-6/2.webp";
-import projectImage3 from "../pro-6/3.webp";
-import projectImage4 from "../pro-6/4.webp";
-import projectImage5 from "../pro-6/5.webp";
-import projectImage6 from "../pro-6/6.webp";
+import projectImage1 from "../pro-6/2.jpg";
+import projectImage2 from "../pro-6/3.jpg";
+import projectImage3 from "../pro-6/4.jpg";
+import projectImage4 from "../pro-6/5.jpg";
+import projectImage5 from "../pro-6/6.jpg";
+import projectImage6 from "../pro-6/7.jpg";
+import projectImage7 from "../pro-6/8.jpg";
+import projectImage8 from "../pro-6/9.png";
+
 
 
 
@@ -50,15 +53,24 @@ const Project1 = () => {
           <div className="project1-header">
             <h1>06</h1>
             <div className="project1-year">
-              <p>2020</p>
-              <span>Co - housing  community</span>
-              <span>Location : Belgaum, India</span>
+              <p>FALL 2023</p>
+              <span>INTEGRATED CONVENTION AND MOBILITY HUB
+</span>
+              <span>PROJECT TYPE: LIVE PROJECT</span>
+              <span>MENTOR: MADHURI GULABANI</span>
+              <span>LOCATION: INDIA</span>
+              <span>TEAM MEMBERS: AISHWARYA, SIMRAN</span>
+
+
             </div>
           </div>
           <div className="project1-details">
-            <h2>Home - Square group project</h2>
+            <h2>
+HILLTOP CULTURAL SPINE
+</h2>
             <p className="cover-description">
-              A Co-housing community is an midrise apartment building which consist of an basement for parking, commercial units and residential units. The units are managed with only one duct in the centre which withholds the services of bath units and all the programs are on the periphery with a lot of sunlight and natural ventilation.
+              Located at a historic hill station frequented by tourists, this government-led infrastructure project revitalizes the region with an integrated civic and cultural complex. Addressing the lack of accessibility and amenities, the project introduces a convention center featuring hospitality suites, fine dining, conference halls, exhibition spaces, artisan markets, and public gathering areas. A funicular railway system connects the lower town to the hilltop, offering seamless transport for all age groups. Complemented by electric buggies and scenic stopovers through forests, lakes, and temples, the design enhances both mobility and cultural experience, while promoting local heritage and sustainable tourism.
+
             </p>
           </div>
         </div>
@@ -73,10 +85,25 @@ const Project1 = () => {
         <div className="project1-image">
           
           <ZoomImage
-            src={projectImage4}
+            src={projectImage1}
             alt="Formula One Grand Prix Race Circuit"
             
           /><ZoomImage
+            src={projectImage2}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          <ZoomImage
+            src={projectImage3}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          <ZoomImage
+            src={projectImage4}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+          <ZoomImage
             src={projectImage5}
             alt="Formula One Grand Prix Race Circuit"
             
@@ -87,16 +114,15 @@ const Project1 = () => {
             
           />
           <ZoomImage
-            src={projectImage3}
+            src={projectImage7}
             alt="Formula One Grand Prix Race Circuit"
             
           />
           <ZoomImage
-            src={projectImage2}
+            src={projectImage8}
             alt="Formula One Grand Prix Race Circuit"
             
           />
-          
           
           <div class="button-section">
   
@@ -113,12 +139,20 @@ const Project1 = () => {
             <a class="center-link" href="/projects#projects-section">All Projects</a>
 
   
-            
+            <a class="right-link" href="/pro7">
+            <span class="right-link__text">Next Project</span>
+            <span class="right-link__line"></span>
+            <span class="right-link__arrow">
+            <span></span>
+            <span></span>
+            </span>
+            </a>
             </div>
+          </div>
+          
           
          
           
-        </div>
         
        
       </div>

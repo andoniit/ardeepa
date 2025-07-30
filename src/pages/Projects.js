@@ -10,12 +10,15 @@ import ReactGA from "react-ga";
 import TiltedCard from '../components/TiltedCard.js';
 
 // Project Images
-import project1 from "../assets/24-1.png";
-import project2 from "../assets/25-2.png";
-import project3 from "../assets/26-3.png";
-import project4 from "../assets/27-4.png";
-import project5 from "../assets/28-5.png";
-import project6 from "../assets/28-5.png";
+// Project Images
+import project1 from "../assets/pro1.png";
+import project2 from "../assets/pro2.png";
+import project3 from "../assets/pro3.png";
+import project4 from "../assets/pro4.png";
+import project5 from "../assets/pro5.png";
+import project6 from "../assets/pro6.png";
+import project7 from "../assets/pro7.png";
+import project8 from "../assets/pro8.png";
 
 
 //import project3 from "../assets/25.png";
@@ -35,17 +38,15 @@ const TRACKING_ID = "G-2LL0NLDS0H";
 ReactGA.initialize(TRACKING_ID);
 
 const Projects = () => {
-  const projectData = [
-    { id: "01", title: "Formula One Grand Prix Race Circuit", subtitle: "Masters 1st term project", img: project1, link: "/pro1" },
-    { id: "02", title: "The Backyard Revival", subtitle: "Internship project", img: project2, link: "/pro2" },
-    { id: "03", title: "Atrium of Light", subtitle: "Internship project", img: project4, link: "/pro3" },
-    { id: "04", title: "Sweet Retreat", subtitle: "Internship project", img: project5, link: "/pro4" },
-    { id: "05", title: "Backyard Reawakening", subtitle: "Internship project", img: project3, link: "/pro5" },
-    { id: "06", title: "Square Group Project", subtitle: "Housing  Community", img: project6, link: "/pro6" },
-
-
-
-
+   const projectData = [
+      { id: "01", title: "F1 Grand Prix Grandstand & F1 Racetrack", subtitle: "PROJECT TYPE - ACADEMIC, MASTERS", img: project1, link: "/pro1" },
+    { id: "02", title: "PARAMETRIC SPIRES", subtitle: "  A STUDY OF SACRED GEOMETRY IN HIGH-RISE DESIGN ", img: project2, link: "/pro2" },
+    { id: "03", title: "URBAN CANOPY", subtitle: "PARAMETRIC PAVILION FOR PUBLIC ENGAGEMENT ", img: project3, link: "/pro3" },
+    { id: "04", title: "NEURODIVERSE FRIENDLY UNIVERSITY SPACES", subtitle: "ARCHITECTURAL STRATEGIES FOR SUPPORTING AUTISTIC STUDENTS", img: project4, link: "/pro4" },
+    { id: "05", title: "Backyard Reawakening", subtitle: "A MULTICUISINE RESTAURANT", img: project5, link: "/pro5" },
+    { id: "06", title: "HILLTOP CULTURAL SPINE", subtitle: "INTEGRATED CONVENTION AND MOBILITY HUB", img: project6, link: "/pro6" },
+    { id: "07", title: "THE SERENITY COURTYARD", subtitle: "THE RESTORATIVE BACKYARD OASIS BLENDING TRANQUILITY, PLAY AND EVERYDAY GATHERING", img: project7, link: "/pro7" },
+    { id: "08", title: "WILDSCAPE DOMES", subtitle: "IMMERSIVE GEODESIC RETREATS BLENDING LUXURY, WILDERNESS AND SERENITY", img: project8, link: "/pro8" },
   ];
   
 
@@ -184,8 +185,6 @@ const Projects = () => {
             captionText="Click to view projects"
             containerHeight="auto"
             containerWidth="auto"
-            imageHeight={window.innerWidth < 768 ? "150px" : "200px"}
-            imageWidth={window.innerWidth < 768 ? "150vw" : "20em"}
             rotateAmplitude={12}
             scaleOnHover={1.2}
             showMobileWarning={window.innerWidth < 768}

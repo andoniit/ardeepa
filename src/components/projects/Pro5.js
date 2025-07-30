@@ -7,16 +7,24 @@ import ZoomImage from "../ZoomImage";
 import Tra from "../tra"
 
 
-import projectImage from "../pro-5/p1.jpg";
-import projectImage1 from "../pro-5/p2.jpg";
-import projectImage2 from "../pro-5/p3.jpg";
-import projectImage3 from "../pro-5/p4.jpg";
-import projectImage4 from "../pro-5/p5.jpg";
-import projectImage5 from "../pro-5/p6.jpg";
-import projectImage6 from "../pro-5/p7.jpg";
-import projectImage7 from "../pro-5/p8.jpg";
-import projectImage8 from "../pro-5/p9.jpg";
-import projectImage9 from "../pro-5/p10.jpg";
+import projectImage from "../pro-5/2.jpg";
+import projectImage1 from "../pro-5/3.jpg";
+import projectImage2 from "../pro-5/4.jpg";
+import projectImage3 from "../pro-5/5.jpg";
+import projectImage4 from "../pro-5/6.jpg";
+import projectImage5 from "../pro-5/7.jpg";
+import projectImage6 from "../pro-5/8.jpg";
+import projectImage7 from "../pro-5/9.jpg";
+import projectImage8 from "../pro-5/10.jpg";
+import projectImage9 from "../pro-5/11.jpg";
+import projectImage10 from "../pro-5/12.jpg";
+import projectImage11 from "../pro-5/13.jpg";
+import projectImage12 from "../pro-5/14.jpg";
+import projectImage13 from "../pro-5/15.jpg";
+import projectImage14 from "../pro-5/16.jpg";
+import projectImage15 from "../pro-5/17.jpg";
+import projectImage16 from "../pro-5/18.jpg";
+
 
 
 
@@ -68,9 +76,16 @@ const Project1 = () => {
           <div className="project1-header">
             <h1>05</h1>
             <div className="project1-year">
-              <p>2024</p>
-              <span>Internship project</span>
-              <span>Location : Belgaum, India</span>
+              <p>SPRING 2023</p>
+              <span>A MULTICUISINE RESTAURANT 
+</span>
+              <span>PROJECT TYPE: LIVE PROJECT</span>
+              <span>MENTOR: MADHURI GULABANI
+</span>
+<span>LOCATION: INDIA
+</span>
+<span>TEAM MEMBERS: AISHWARYA, SIMRAN 
+</span>
               
             </div>
             
@@ -80,7 +95,9 @@ const Project1 = () => {
             
             <h2>Backyard Reawakening</h2>
             <p className="cover-description">
-            Originally, this backyard featured a central pool and a gazebo at the far end, but it was neglected because the pool's large size disrupted the spatial flow. In the new design, the pool has been relocated to one side, accompanied by a cascading water feature and spout. Opposite the pool, a statue of Buddha now stands before a small, circular lotus pond, lending a tranquil ambiance to the space.
+           
+The restaurant has been revitalized through a thoughtful renovation that transforms its once-neglected backyard into the focal point of space. This area now features an open-air courtyard with outdoor seating, framed by multiple fine dining zones—including dedicated family seating, a smoking area, a bar counter, and a striking spiral staircase. A pergola with integrated glass elements provides a cohesive connection between these spaces. The spiral staircase leads to the first floor, which is exclusively designed for family dining.
+
             </p>
             
           </div>
@@ -156,6 +173,36 @@ const Project1 = () => {
           />
           <ZoomImage
             src={projectImage9}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+           <ZoomImage
+            src={projectImage10}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          /> <ZoomImage
+            src={projectImage11}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          /> <ZoomImage
+            src={projectImage12}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          /> <ZoomImage
+            src={projectImage13}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          /> <ZoomImage
+            src={projectImage14}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          /> <ZoomImage
+            src={projectImage15}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
+           <ZoomImage
+            src={projectImage16}
             alt="Formula One Grand Prix Race Circuit"
             
           />
