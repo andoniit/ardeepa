@@ -8,6 +8,8 @@ import Tra from "../tra";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+
+import projectImage0 from "../wiwo-3/0.jpg";
 import projectImage from "../wiwo-3/1.jpg";
 import projectImage1 from "../wiwo-3/2.jpg";
 import projectImage2 from "../wiwo-3/3.jpg";
@@ -22,13 +24,7 @@ import projectImage10 from "../wiwo-3/11.webp";
 import projectImage11 from "../wiwo-3/12.webp";
 import projectImage12 from "../wiwo-3/13.webp";
 
-import projectImage13 from "../wiwo-3-2/1.jpg";
-import projectImage14 from "../wiwo-3-2/2.jpg";
-import projectImage15 from "../wiwo-3-2/3.jpg";
-import projectImage16 from "../wiwo-3-2/4.jpg";
-import projectImage17 from "../wiwo-3-2/5.jpg";
-import projectImage18 from "../wiwo-3-2/6.jpg";
-import projectImage19 from "../wiwo-3-2/7.jpg";
+
 
 
 
@@ -107,21 +103,11 @@ developments in Chicago
         </div>
 
         {/* Panel 2: Big Image 1 */}
-        <div className="panel img">
-          <ZoomImage src={projectImage13} alt="Project Image 1"/> 
-        </div><div className="panel img">
-          <ZoomImage src={projectImage14} alt="Project Image 1"/> 
-        </div><div className="panel img">
-          <ZoomImage src={projectImage15} alt="Project Image 1"/> 
-        </div><div className="panel img">
-          <ZoomImage src={projectImage16} alt="Project Image 1"/> 
-        </div><div className="panel img">
-          <ZoomImage src={projectImage17} alt="Project Image 1"/> 
-        </div><div className="panel img">
-          <ZoomImage src={projectImage18} alt="Project Image 1"/> 
-        </div><div className="panel img">
-          <ZoomImage src={projectImage19} alt="Project Image 1"/> 
+        
+           <div className="panel img">
+          <ZoomImage src={projectImage0} alt="Project Image 1"/> 
         </div>
+        
         <div className="panel img">
           <ZoomImage src={projectImage} alt="Project Image 1"/> 
         </div>
@@ -188,6 +174,7 @@ developments in Chicago
         
         
       </motion.div>
+      
       {/* Section 2 (Text) */}
       <motion.div
         className="sections-container"
