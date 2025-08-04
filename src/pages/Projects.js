@@ -27,11 +27,11 @@ import project9 from "../assets/pro9.jpeg";
 
 // Slider Images
 import slider1 from "../assets/1p1.jpg";
-import slider2 from "../assets/2p2.jpeg";
+import slider2 from "../assets/2p2.jpg";
 import slider3 from "../assets/3p3.jpg";
-import slider4 from "../assets/4p4.png";
-import slider5 from "../assets/5p5.png";
-import slider6 from "../assets/6p6.jpg";
+import slider4 from "../assets/4p4.jpg";
+import slider6 from "../assets/5p5.jpg";
+import slider5 from "../assets/6p6.jpg";
 import slider7 from "../assets/7p7.jpg";
 import slider8 from "../assets/8p8.jpg";
 

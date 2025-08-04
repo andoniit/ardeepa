@@ -32,14 +32,14 @@ const Home = () => {
   
   const projectData = [
     { id: "01", title: "F1 Grand Prix Grandstand & F1 Racetrack", subtitle: "PROJECT TYPE - ACADEMIC, MASTERS", img: project1, link: "/pro1" },
-    { id: "02", title: "PARAMETRIC SPIRES", subtitle: "  A STUDY OF SACRED GEOMETRY IN HIGH-RISE DESIGN ", img: project2, link: "/pro2" },
-    { id: "03", title: "URBAN CANOPY", subtitle: "PARAMETRIC PAVILION FOR PUBLIC ENGAGEMENT ", img: project3, link: "/pro3" },
-    { id: "04", title: "NEURODIVERSE FRIENDLY UNIVERSITY SPACES", subtitle: "ARCHITECTURAL STRATEGIES FOR SUPPORTING AUTISTIC STUDENTS", img: project4, link: "/pro4" },
+    { id: "02", title: "Parametric Spires", subtitle: "  A STUDY OF SACRED GEOMETRY IN HIGH-RISE DESIGN ", img: project2, link: "/pro2" },
+    { id: "03", title: "Urban Canopy", subtitle: "PARAMETRIC PAVILION FOR PUBLIC ENGAGEMENT ", img: project3, link: "/pro3" },
+    { id: "04", title: "Neurodiverse Friendly University Spaces", subtitle: "ARCHITECTURAL STRATEGIES FOR SUPPORTING AUTISTIC STUDENTS", img: project4, link: "/pro4" },
     { id: "05", title: "Backyard Reawakening", subtitle: "A MULTICUISINE RESTAURANT", img: project5, link: "/pro5" },
-    { id: "06", title: "HILLTOP CULTURAL SPINE", subtitle: "INTEGRATED CONVENTION AND MOBILITY HUB", img: project6, link: "/pro6" },
-    { id: "07", title: "THE SERENITY COURTYARD", subtitle: "THE RESTORATIVE BACKYARD OASIS BLENDING TRANQUILITY, PLAY AND EVERYDAY GATHERING", img: project7, link: "/pro7" },
-    { id: "08", title: "WILDSCAPE DOMES", subtitle: "IMMERSIVE GEODESIC RETREATS BLENDING LUXURY, WILDERNESS AND SERENITY", img: project8, link: "/pro8" },
-    { id: "09", title: "URBAN REFLECTIONS", subtitle: "A SITE STUDY OF UDUPI, KARNATAKA", img: project9, link: "/pro9" },
+    { id: "06", title: "Hilltop Cultural Spine", subtitle: "INTEGRATED CONVENTION AND MOBILITY HUB", img: project6, link: "/pro6" },
+    { id: "07", title: "The Serenity Courtyard", subtitle: "THE RESTORATIVE BACKYARD OASIS BLENDING TRANQUILITY, PLAY AND EVERYDAY GATHERING", img: project7, link: "/pro7" },
+    { id: "08", title: "Wildscape Dome", subtitle: "IMMERSIVE GEODESIC RETREATS BLENDING LUXURY, WILDERNESS AND SERENITY", img: project8, link: "/pro8" },
+    { id: "09", title: "Urban Reflections", subtitle: "A SITE STUDY OF UDUPI, KARNATAKA", img: project9, link: "/pro9" },
 
 
   ];
