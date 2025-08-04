@@ -21,6 +21,8 @@ import project5 from "../assets/pro5.png";
 import project6 from "../assets/pro6.png";
 import project7 from "../assets/pro7.png";
 import project8 from "../assets/pro8.png";
+import project9 from "../assets/pro9.jpeg";
+
 
 
 const TRACKING_ID = "G-2LL0NLDS0H";
@@ -37,6 +39,8 @@ const Home = () => {
     { id: "06", title: "HILLTOP CULTURAL SPINE", subtitle: "INTEGRATED CONVENTION AND MOBILITY HUB", img: project6, link: "/pro6" },
     { id: "07", title: "THE SERENITY COURTYARD", subtitle: "THE RESTORATIVE BACKYARD OASIS BLENDING TRANQUILITY, PLAY AND EVERYDAY GATHERING", img: project7, link: "/pro7" },
     { id: "08", title: "WILDSCAPE DOMES", subtitle: "IMMERSIVE GEODESIC RETREATS BLENDING LUXURY, WILDERNESS AND SERENITY", img: project8, link: "/pro8" },
+    { id: "09", title: "URBAN REFLECTIONS", subtitle: "A SITE STUDY OF UDUPI, KARNATAKA", img: project9, link: "/pro9" },
+
 
   ];
   

@@ -7,9 +7,12 @@ import ZoomImage from "../ZoomImage";
 import Tra from "../tra"
 
 
-import projectImage1 from "../pro-8/2.jpg";
-import projectImage2 from "../pro-8/3.jpg";
-import projectImage3 from "../pro-8/4.jpg";
+import projectImage1 from "../pro-9/1.jpg";
+import projectImage2 from "../pro-9/2.jpg";
+import projectImage3 from "../pro-9/3.jpg";
+import projectImage4 from "../pro-9/4.jpg";
+import projectImage5 from "../pro-9/5.jpg";
+
 
 
 
@@ -46,25 +49,33 @@ const Project1 = () => {
         
         <div className="project1-hero-content">
           <div className="project1-header">
-            <h1>08</h1>
+            <h1>09</h1>
             <div className="project1-year">
-              <p>SPRING 2022</p>
-              <span>IMMERSIVE GEODESIC RETREATS BLENDING LUXURY, WILDERNESS AND SERENITY</span>
-              <span>PROJECT TYPE: INTERNSHIP PROJECT</span>
-              <span>MENTOR: MADHURI GULABANI
+              <p>SPRING 2022
+</p>
+              <span>A SITE STUDY OF UDUPI, KARNATAKA
+</span>
+              <span>PROJECT TYPE: ACADEMIC, UNDERGRAD
+</span>
+              <span>MENTOR: PRASAD KULKARNI
 </span>
               <span>LOCATION: INDIA
 </span>
-              <span>TEAM MEMBERS: SIMRAN
-</span>
+              
 
             </div>
           </div>
           <div className="project1-details">
-            <h2>WILDSCAPE DOMES
+            <h2>
+URBAN REFLECTIONS 
+
 </h2>
             <p className="cover-description">
-              Set within the heart of a forest, Wildscape Domes is a resort concept featuring modern geodesic structures that offer an immersive experience of nature without compromising comfort. Each dome is designed with a panoramic window placed directly opposite the bed, framing an uninterrupted view of the infinity pool merging into the wild landscape beyond. The layout and orientation enhance the guest’s connection to the outdoors while maintaining privacy and thermal comfort. The project balances eco-sensitive architecture with experiential luxury, offering a retreat that soothes and inspires.
+              
+This urban research project focused on Udupi, a coastal town in Karnataka widely recognized as the “Town of Temples.” Through in-person site visits and surveys, we studied the spatial evolution of the city, analyzing both historic and contemporary patterns of use, architecture, movement, and infrastructure. The project emphasized understanding how religion, culture, and coastal geography shaped the urban character of Udupi over time.<br></br><br></br>
+
+By mapping built and social fabric, documenting user behaviors, and analyzing transformations at the architectural and urban scale, the study formed the basis for context-sensitive planning recommendations. Our work aimed to preserve the city’s identity while addressing the challenges of modern urban growth.<br></br><br></br>
+
 
             </p>
           </div>
@@ -73,9 +84,7 @@ const Project1 = () => {
 
       {/* New Section: Image and Description */}
       
-          <div className="intro9">
           
-          </div>
           <div className="project1-extra-section">
         <div className="project1-image">
           
@@ -93,12 +102,20 @@ const Project1 = () => {
             alt="Formula One Grand Prix Race Circuit"
             
           />
-         
+         <ZoomImage
+            src={projectImage4}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          /><ZoomImage
+            src={projectImage5}
+            alt="Formula One Grand Prix Race Circuit"
+            
+          />
         
           
           <div class="button-section">
   
-            <a class="left-link" href="/pro7">
+            <a class="left-link" href="/pro8">
             <span class="left-link__arrow">
             <span></span>
             <span></span>
@@ -111,14 +128,7 @@ const Project1 = () => {
             <a class="center-link" href="/projects#projects-section">All Projects</a>
 
   
-            <a class="right-link" href="/pro9">
-            <span class="right-link__text">Next Project</span>
-            <span class="right-link__line"></span>
-            <span class="right-link__arrow">
-            <span></span>
-            <span></span>
-            </span>
-            </a>
+            
             </div>
           
          

@@ -10,7 +10,6 @@ import Tra from "../tra"
 import projectImage from "../pro-3/2.jpg";
 import projectImage1 from "../pro-3/3.jpg";
 import projectImage2 from "../pro-3/4.jpg";
-import projectImage3 from "../pro-3/3.jpg";
 import projectImage4 from "../pro-3/5.jpg";
 import projectImage5 from "../pro-3/6.jpg";
 import projectImage6 from "../pro-3/7.jpg";
@@ -120,11 +119,7 @@ const Project1 = () => {
           
 
 
-            <ZoomImage
-            src={projectImage3}
-            alt="Formula One Grand Prix Race Circuit"
             
-          />
           <ZoomImage
             src={projectImage4}
             alt="Formula One Grand Prix Race Circuit"

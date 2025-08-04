@@ -22,20 +22,28 @@ import projectImage11 from "../wiwo-4/12.webp";
 import projectImage12 from "../wiwo-4/13.webp";
 import projectImage13 from "../wiwo-4/14.webp";
 
-import projectImage14 from "../wiwo-4-2/1.webp";
-import projectImage15 from "../wiwo-4-2/2.webp";
-import projectImage16 from "../wiwo-4-2/3.webp";
-import projectImage17 from "../wiwo-4-2/4.webp";
-import projectImage18 from "../wiwo-4-2/5.webp";
-import projectImage19 from "../wiwo-4-2/6.webp";
-import projectImage20 from "../wiwo-4-2/7.webp";
-import projectImage21 from "../wiwo-4-2/8.webp";
-import projectImage22 from "../wiwo-4-2/9.webp";
-import projectImage23 from "../wiwo-4-2/10.webp";
-import projectImage24 from "../wiwo-4-2/11.webp";
-import projectImage25 from "../wiwo-4-2/12.webp";
-import projectImage26 from "../wiwo-4-2/13.webp";
-import projectImage27 from "../wiwo-4-2/14.webp";
+import projectImage14 from "../wiwo-4-2/1.jpg";
+import projectImage15 from "../wiwo-4-2/2.jpg";
+import projectImage16 from "../wiwo-4-2/3.jpg";
+import projectImage17 from "../wiwo-4-2/4.jpg";
+import projectImage18 from "../wiwo-4-2/5.jpg";
+import projectImage19 from "../wiwo-4-2/6.jpg";
+import projectImage20 from "../wiwo-4-2/7.jpg";
+import projectImage21 from "../wiwo-4-2/8.jpg";
+import projectImage22 from "../wiwo-4-2/9.jpg";
+import projectImage23 from "../wiwo-4-2/10.jpg";
+import projectImage24 from "../wiwo-4-2/11.jpg";
+import projectImage25 from "../wiwo-4-2/12.jpg";
+import projectImage26 from "../wiwo-4-2/13.jpg";
+import projectImage27 from "../wiwo-4-2/14.jpg";
+import projectImage28 from "../wiwo-4-2/15.jpg";
+import projectImage29 from "../wiwo-4-2/16.jpg";
+import projectImage30 from "../wiwo-4-2/17.jpg";
+import projectImage31 from "../wiwo-4-2/18.jpg";
+import projectImage32 from "../wiwo-4-2/19.jpg";
+import projectImage33 from "../wiwo-4-2/20.jpg";
+
+
 
 
 
@@ -227,7 +235,32 @@ const Project1 = () => {
         alt="Formula One Grand Prix Race Circuit"
         
       /><ZoomImage
-        src={projectImage26}
+        src={projectImage27}
+        alt="Formula One Grand Prix Race Circuit"
+        
+      /><ZoomImage
+        src={projectImage28}
+        alt="Formula One Grand Prix Race Circuit"
+        
+      /><ZoomImage
+        src={projectImage29}
+        alt="Formula One Grand Prix Race Circuit"
+        
+      /><ZoomImage
+        src={projectImage30}
+        alt="Formula One Grand Prix Race Circuit"
+        
+      /><ZoomImage
+        src={projectImage31}
+        alt="Formula One Grand Prix Race Circuit"
+        
+      /><ZoomImage
+        src={projectImage32}
+        alt="Formula One Grand Prix Race Circuit"
+        
+      />
+      <ZoomImage
+        src={projectImage33}
         alt="Formula One Grand Prix Race Circuit"
         
       />

@@ -22,6 +22,15 @@ import projectImage10 from "../wiwo-3/11.webp";
 import projectImage11 from "../wiwo-3/12.webp";
 import projectImage12 from "../wiwo-3/13.webp";
 
+import projectImage13 from "../wiwo-3-2/1.jpg";
+import projectImage14 from "../wiwo-3-2/2.jpg";
+import projectImage15 from "../wiwo-3-2/3.jpg";
+import projectImage16 from "../wiwo-3-2/4.jpg";
+import projectImage17 from "../wiwo-3-2/5.jpg";
+import projectImage18 from "../wiwo-3-2/6.jpg";
+import projectImage19 from "../wiwo-3-2/7.jpg";
+
+
 
 
 
@@ -80,13 +89,17 @@ const Project1 = () => {
               {/* Center Column */}
               <div className="muller-column center-col">
                 <h1>"Japnese Architecture"</h1>
+                <h1>Curated Educational Architecture Exhibit on Post-War Modernism in Japan and Chicago May 2025
+</h1>
                 <h2 >日本の建築</h2>
               </div>
               {/* Right Column */}
               <div className="muller-column right-col">
                 <h3> UNDER THE GUIDANCE OF<br></br>prof.Junko Taguchi</h3>
                 <p>
-                In our Modern Architecture in Asia course, we are exploring the preservation and modernization of architecture in East Asian countries, with a primary focus on pre-war and post-war modern Japanese architecture facing challenges such as deferred maintenance and demolition. Our study includes buildings documented by DOCOMOMO and a brief exploration of Kenzo Tange’s works and architectural principles. In mid-May, we will participate in an exhibition showcasing Japan’s post-war buildings and examining the impact of Westernization on Japan’s architectural heritage.
+                  Our team of four curated an architectural exhibition aimed at engaging CPS students, their teachers, and IIT professors. The exhibit raised awareness 
+about the field of architecture, with our boards specifically exploring post-war modernism in Japan and drawing parallels with the architectural 
+developments in Chicago
                 </p>
               </div>
             </div>
@@ -94,6 +107,21 @@ const Project1 = () => {
         </div>
 
         {/* Panel 2: Big Image 1 */}
+        <div className="panel img">
+          <ZoomImage src={projectImage13} alt="Project Image 1"/> 
+        </div><div className="panel img">
+          <ZoomImage src={projectImage14} alt="Project Image 1"/> 
+        </div><div className="panel img">
+          <ZoomImage src={projectImage15} alt="Project Image 1"/> 
+        </div><div className="panel img">
+          <ZoomImage src={projectImage16} alt="Project Image 1"/> 
+        </div><div className="panel img">
+          <ZoomImage src={projectImage17} alt="Project Image 1"/> 
+        </div><div className="panel img">
+          <ZoomImage src={projectImage18} alt="Project Image 1"/> 
+        </div><div className="panel img">
+          <ZoomImage src={projectImage19} alt="Project Image 1"/> 
+        </div>
         <div className="panel img">
           <ZoomImage src={projectImage} alt="Project Image 1"/> 
         </div>

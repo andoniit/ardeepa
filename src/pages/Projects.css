@@ -109,7 +109,7 @@ body {
   display: grid;
   /* 3 columns min 300px, auto-fit shrinks to fewer columns on small screens */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 12rem;
+  gap: 8rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
@@ -166,7 +166,7 @@ body {
 .grid-text h3 {
   font-size: 1rem;      /* same as previous .content-details h3 */
   color: #333;
-  font-weight: 200;
+  font-weight: 700;
   text-transform: capitalize;
   margin: 0;   
   text-align: left;
@@ -179,6 +179,7 @@ body {
   text-transform: capitalize;
   margin: 0.25rem 0 0 0; /* small spacing below title */
   text-decoration: none !important;  
+  font-weight: 500;
 }
 
 /* On very small screens, ensure text doesn't overflow */

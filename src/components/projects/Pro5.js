@@ -11,7 +11,7 @@ import projectImage from "../pro-5/2.jpg";
 import projectImage1 from "../pro-5/3.jpg";
 import projectImage2 from "../pro-5/4.jpg";
 import projectImage3 from "../pro-5/5.jpg";
-import projectImage4 from "../pro-5/6.jpg";
+
 import projectImage5 from "../pro-5/7.jpg";
 import projectImage6 from "../pro-5/8.jpg";
 import projectImage7 from "../pro-5/9.jpg";
@@ -146,11 +146,7 @@ The restaurant has been revitalized through a thoughtful renovation that transfo
           
 
 
-            <ZoomImage
-            src={projectImage4}
-            alt="Formula One Grand Prix Race Circuit"
             
-          />
           <ZoomImage
             src={projectImage5}
             alt="Formula One Grand Prix Race Circuit"

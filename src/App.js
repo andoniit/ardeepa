@@ -15,6 +15,7 @@ import Pro5 from './components/projects/Pro5';
 import Pro6 from './components/projects/Pro6';
 import Pro7 from './components/projects/Pro7';
 import Pro8 from './components/projects/Pro8';
+import Pro9 from './components/projects/Pro9';
 import Wiwo1 from './components/projects/wiwo1';
 import Wiwo2 from './components/projects/wiwo2';
 import Wiwo3 from './components/projects/wiwo3';
@@ -70,6 +71,7 @@ const App = () => {
         <Route path="/pro6" element={<Pro6 />} />
         <Route path="/pro7" element={<Pro7 />} />
         <Route path="/pro8" element={<Pro8 />} />
+        <Route path="/pro9" element={<Pro9 />} />
         <Route path="/wiwo1" element={<Wiwo1 />} />
         <Route path="/wiwo2" element={<Wiwo2 />} />
         <Route path="/wiwo3" element={<Wiwo3 />} />
